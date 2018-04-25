@@ -1,6 +1,6 @@
 //
 //  MenuScene.swift
-//  BounceBar
+//  BarBouncer
 //
 //  Created by Brian Cao on 9/18/17.
 //  Copyright © 2017 Brian Cao. All rights reserved.
@@ -8,69 +8,52 @@
 
 import SpriteKit
 import UIKit
-
+/*
 class MenuScene: SKScene
 {
-
-    override func didMove(to view: SKView)
+   
+    override func sceneDidLoad()
     {
         screenSize = CGSize(width: self.frame.width, height: self.frame.height)
+        
         self.backgroundColor = menuSceneBackgroundColor
         
-        let numberOfPages = Int(Double(levelDataArray.count/30).rounded(FloatingPointRoundingRule.up))
         
-        // Might need to move to did load
+        super.sceneDidLoad()
+        
+        let playButton = Button(x: 0, y: -80, action: moveToLevelSelectScene, delay: 125)
+        playButton.size = CGSize(width: 160, height: 160)
+        playButton.texture = SKTexture(imageNamed: "PlayButton")
+        
+        addChild(playButton)
+        
+        if let savedCompletedLevels: Array<Int> = UserDefaults.standard.object(forKey: Keys.completedLevels) as? Array<Int>{
+            completedLevels = savedCompletedLevels
+        }
+        
+        var numberOfPages: Int{
+            let num: Double = Double(levelDataArray.count)/30.0
+            return Int(num.rounded(.up))
+        }
+        
         for page in 0...numberOfPages - 1
         {
-            var arrayOfButtons: Array<LevelButton> = []
-            var currentLevelNumber: Int!
-            
-            
-            //Fills arrayOfLevels to 30
-            for row in 0...5
-            {
-                for col in 0...4
-                {
-                    currentLevelNumber = 30*page+(5*row + col+1)
-                    let button = LevelButton(x: CGFloat(-240 + 120 * col), y: CGFloat(180 - 120 * row), levelNumber: currentLevelNumber)
-                    //Appends current level
-                    arrayOfButtons.append(button)
-                }
-            }
-            
-            //Inputs current arrayOfLevels to make an instance of a SelectScene and then appends that scene to levelSelectScenesArray
-            
-            levelSelectScenes.append(LevelSelectScene(buttonsArray: arrayOfButtons))
-            
+            levelSelectScenes.append(LevelSelectScene(pageNum: page))
         }
         
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
-    {
-        for touch in touches
-        {
-            let location = touch.location(in: self)
-            let touchedNode = self.atPoint(location)
-            
-            if let nodeName = touchedNode.name
-            {
-                
-                switch nodeName
-                {
-                case "PlayButton":
-                    //Goes to the first levelSelectScene instance
-                    let nextScene = levelSelectScenes[0]
-                    nextScene.scaleMode = .aspectFit
-                    self.scene?.view?.presentScene(nextScene, transition: SKTransition.fade(withDuration: 0.28))
-                    
-                default:
-                    break
-                }
-            }
+    
+    func moveToLevelSelectScene() {
+        var nextScene: LevelSelectScene {
+            let currentPage = Int(Double(completedLevels.count/30).rounded(.down))
+            return levelSelectScenes[currentPage]
         }
+        nextScene.scaleMode = .aspectFit
+        self.scene?.view?.presentScene(nextScene, transition: SKTransition.fade(withDuration: 0.28))
     }
     
   
     
 }
+ */

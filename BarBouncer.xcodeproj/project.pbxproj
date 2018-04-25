@@ -16,6 +16,8 @@
 		A7034A471EB16D8500646900 /* BarBouncerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7034A461EB16D8500646900 /* BarBouncerUITests.swift */; };
 		A7034A571EB16FD500646900 /* BallClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7034A561EB16FD500646900 /* BallClass.swift */; };
 		A708DABB1F191E0000487BB3 /* BarClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A708DABA1F191E0000487BB3 /* BarClass.swift */; };
+		A7131B781FFDCF0100CCAE13 /* BarFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7131B771FFDCF0100CCAE13 /* BarFactory.swift */; };
+		A7131B7A1FFF35A300CCAE13 /* SwitchBarClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7131B791FFF35A300CCAE13 /* SwitchBarClass.swift */; };
 		A71963D01EBC022500B079AA /* SolidBarClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71963CF1EBC022500B079AA /* SolidBarClass.swift */; };
 		A737A3021F04B49600B9AAB9 /* BreakBarClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A737A3011F04B49600B9AAB9 /* BreakBarClass.swift */; };
 		A73B67E11F8F181C00C788B6 /* EnumsAndStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73B67E01F8F181C00C788B6 /* EnumsAndStructs.swift */; };
@@ -28,9 +30,13 @@
 		A7DA77BB1F141D0A00BB640F /* LevelMakerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DA77BA1F141D0A00BB640F /* LevelMakerScene.swift */; };
 		A7DA77BD1F141D3600BB640F /* LevelMakerScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A7DA77BC1F141D3600BB640F /* LevelMakerScene.sks */; };
 		A7E8944D1EB509260080B662 /* LevelSelectScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E8944C1EB509260080B662 /* LevelSelectScene.swift */; };
+		A7E928E01FB7C66B005AC736 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7E928DF1FB7C66B005AC736 /* GoogleService-Info.plist */; };
+		A7E928E21FB7C685005AC736 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E928E11FB7C684005AC736 /* GoogleMobileAds.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		A7EC5E291EE9E2E800FCC555 /* LevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EC5E281EE9E2E800FCC555 /* LevelScene.swift */; };
 		A7EC5E2B1EEA109F00FCC555 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EC5E2A1EEA109F00FCC555 /* GameData.swift */; };
 		A7EF50611EB3F92C00B4B927 /* EndZoneClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EF50601EB3F92C00B4B927 /* EndZoneClass.swift */; };
+		A7FDABC21FDC6A41006FD335 /* LevelGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FDABC11FDC6A41006FD335 /* LevelGrid.swift */; };
+		A7FDABC41FDCF15D006FD335 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FDABC31FDCF15D006FD335 /* Button.swift */; };
 		A7FFBFDD1EBE62E100F42797 /* PolygonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FFBFDC1EBE62E100F42797 /* PolygonClass.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,9 +73,12 @@
 		A7034A481EB16D8500646900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7034A561EB16FD500646900 /* BallClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallClass.swift; sourceTree = "<group>"; };
 		A708DABA1F191E0000487BB3 /* BarClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarClass.swift; sourceTree = "<group>"; };
+		A7131B771FFDCF0100CCAE13 /* BarFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarFactory.swift; sourceTree = "<group>"; };
+		A7131B791FFF35A300CCAE13 /* SwitchBarClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchBarClass.swift; sourceTree = "<group>"; };
 		A71963CF1EBC022500B079AA /* SolidBarClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolidBarClass.swift; sourceTree = "<group>"; };
 		A737A3011F04B49600B9AAB9 /* BreakBarClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreakBarClass.swift; sourceTree = "<group>"; };
 		A73B67E01F8F181C00C788B6 /* EnumsAndStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumsAndStructs.swift; sourceTree = "<group>"; };
+		A75F0C3D208D8FF50004995D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A77933431F224A3D00591125 /* HighLightBarsClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighLightBarsClass.swift; sourceTree = "<group>"; };
 		A7974D481EEB59DF0079796A /* LevelDataArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelDataArray.swift; sourceTree = "<group>"; };
 		A7A723DA1F70E0150074E7FA /* MenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuScene.swift; path = ../MenuScene.swift; sourceTree = "<group>"; };
@@ -79,9 +88,13 @@
 		A7DA77BA1F141D0A00BB640F /* LevelMakerScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelMakerScene.swift; path = ../LevelMakerScene.swift; sourceTree = "<group>"; };
 		A7DA77BC1F141D3600BB640F /* LevelMakerScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelMakerScene.sks; sourceTree = "<group>"; };
 		A7E8944C1EB509260080B662 /* LevelSelectScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelSelectScene.swift; path = ../LevelSelectScene.swift; sourceTree = "<group>"; tabWidth = 4; };
+		A7E928DF1FB7C66B005AC736 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A7E928E11FB7C684005AC736 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		A7EC5E281EE9E2E800FCC555 /* LevelScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelScene.swift; sourceTree = "<group>"; };
 		A7EC5E2A1EEA109F00FCC555 /* GameData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 		A7EF50601EB3F92C00B4B927 /* EndZoneClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndZoneClass.swift; sourceTree = "<group>"; };
+		A7FDABC11FDC6A41006FD335 /* LevelGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelGrid.swift; sourceTree = "<group>"; };
+		A7FDABC31FDCF15D006FD335 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		A7FFBFDC1EBE62E100F42797 /* PolygonClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PolygonClass.swift; path = ../PolygonClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7E928E21FB7C685005AC736 /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +132,7 @@
 				A7034A3A1EB16D8500646900 /* BarBounce to endTests */,
 				A7034A451EB16D8500646900 /* BarBounce UITests */,
 				A7034A1E1EB16D8500646900 /* Products */,
+				A75F0C3C208D8FF40004995D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +149,8 @@
 		A7034A1F1EB16D8500646900 /* BarBouncer */ = {
 			isa = PBXGroup;
 			children = (
+				A7E928DF1FB7C66B005AC736 /* GoogleService-Info.plist */,
+				A7E928E11FB7C684005AC736 /* GoogleMobileAds.framework */,
 				A708DABC1F192C1200487BB3 /* Scenes */,
 				A7974D451EEA3D970079796A /* LevelClasses */,
 				A7974D461EEA3F910079796A /* GameObjectClasses */,
@@ -205,14 +222,26 @@
 				A7A9E6E41EB190DF005FBEB0 /* BounceBarClass.swift */,
 				A71963CF1EBC022500B079AA /* SolidBarClass.swift */,
 				A737A3011F04B49600B9AAB9 /* BreakBarClass.swift */,
+				A7131B771FFDCF0100CCAE13 /* BarFactory.swift */,
+				A7131B791FFF35A300CCAE13 /* SwitchBarClass.swift */,
 			);
 			name = "Bar Classes";
+			sourceTree = "<group>";
+		};
+		A75F0C3C208D8FF40004995D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A75F0C3D208D8FF50004995D /* QuartzCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A7974D451EEA3D970079796A /* LevelClasses */ = {
 			isa = PBXGroup;
 			children = (
 				A7EC5E2A1EEA109F00FCC555 /* GameData.swift */,
+				A7FDABC11FDC6A41006FD335 /* LevelGrid.swift */,
+				A7FDABC31FDCF15D006FD335 /* Button.swift */,
 				A7D7AFF61EB5321B00A54EF0 /* LevelButtonClass.swift */,
 			);
 			name = LevelClasses;
@@ -293,12 +322,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Brian Cao";
 				TargetAttributes = {
 					A7034A1C1EB16D8400646900 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = L4C8QAYK3H;
+						DevelopmentTeam = 8XADYWMGR5;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -349,6 +378,7 @@
 				A7034A311EB16D8500646900 /* LaunchScreen.storyboard in Resources */,
 				A7034A251EB16D8500646900 /* Actions.sks in Resources */,
 				A7A723DD1F70E0390074E7FA /* MenuScene.sks in Resources */,
+				A7E928E01FB7C66B005AC736 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +405,8 @@
 			files = (
 				A7A723DB1F70E0150074E7FA /* MenuScene.swift in Sources */,
 				A7EF50611EB3F92C00B4B927 /* EndZoneClass.swift in Sources */,
+				A7131B7A1FFF35A300CCAE13 /* SwitchBarClass.swift in Sources */,
+				A7FDABC21FDC6A41006FD335 /* LevelGrid.swift in Sources */,
 				A7034A291EB16D8500646900 /* GameViewController.swift in Sources */,
 				A73B67E11F8F181C00C788B6 /* EnumsAndStructs.swift in Sources */,
 				A7EC5E291EE9E2E800FCC555 /* LevelScene.swift in Sources */,
@@ -386,7 +418,9 @@
 				A7974D491EEB59DF0079796A /* LevelDataArray.swift in Sources */,
 				A77933441F224A3D00591125 /* HighLightBarsClass.swift in Sources */,
 				A7034A571EB16FD500646900 /* BallClass.swift in Sources */,
+				A7131B781FFDCF0100CCAE13 /* BarFactory.swift in Sources */,
 				A7DA77BB1F141D0A00BB640F /* LevelMakerScene.swift in Sources */,
+				A7FDABC41FDCF15D006FD335 /* Button.swift in Sources */,
 				A708DABB1F191E0000487BB3 /* BarClass.swift in Sources */,
 				A737A3021F04B49600B9AAB9 /* BreakBarClass.swift in Sources */,
 				A7EC5E2B1EEA109F00FCC555 /* GameData.swift in Sources */,
@@ -458,6 +492,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -465,6 +500,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -491,7 +527,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -515,6 +551,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -522,6 +559,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -542,7 +580,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -555,13 +593,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = L4C8QAYK3H;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XADYWMGR5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ball\\ to\\ end",
+				);
 				INFOPLIST_FILE = "ball to end/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cao.ballToEnd;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bdc.barbouncer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -569,13 +615,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = L4C8QAYK3H;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XADYWMGR5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ball\\ to\\ end",
+				);
 				INFOPLIST_FILE = "ball to end/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cao.ballToEnd;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bdc.barbouncer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

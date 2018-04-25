@@ -17,20 +17,21 @@ var LMendZone = EndZone(x: 0, y: 0)
 
 class LevelMakerScene: SKScene {
     
-    @objc var xPositionLabel = SKLabelNode()
-    @objc var yPositionLabel = SKLabelNode()
-    @objc var upArrow = SKSpriteNode()
-    @objc var downArrow = SKSpriteNode()
-    @objc var leftArrow = SKSpriteNode()
-    @objc var rightArrow = SKSpriteNode()
+    var xPositionLabel = SKLabelNode()
+    var yPositionLabel = SKLabelNode()
+    var upArrow = SKSpriteNode()
+    var downArrow = SKSpriteNode()
+    var leftArrow = SKSpriteNode()
+    var rightArrow = SKSpriteNode()
     var location: CGPoint!
-    @objc let highLightBars = HighLightBars()
-    @objc var objectIsHeld = false
-    @objc var lastSelectedObject: SKSpriteNode!
-    @objc var lastSelectedBreakBar: BreakBar!
+    let highLightBars = HighLightBars()
+    var objectIsHeld = false
+    var lastSelectedObject: SKSpriteNode!
+    var lastSelectedBreakBar: BreakBar!
     
     override func didMove(to view: SKView) {
         
+    
         xPositionLabel = childNode(withName: "xPositionLabel") as! SKLabelNode
         yPositionLabel = childNode(withName: "yPositionLabel") as! SKLabelNode
         upArrow = childNode(withName: "upArrow") as! SKSpriteNode
@@ -88,6 +89,7 @@ class LevelMakerScene: SKScene {
         
         
     }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch in touches {
             var barArray: Array<Bar> = []
@@ -204,7 +206,7 @@ class LevelMakerScene: SKScene {
                         }
                     }
                     
-                    print("LevelData(ball: \(LMball.printProperties()), endZone: \(LMendZone.printProperties()), bounceBars: [\(bounceBars)], solidBars: [\(solidBars)], breakBars: [\(breakBars)])")
+                    print("GameData(ball: \(LMball.printProperties()), endZone: \(LMendZone.printProperties()), bounceBars: [\(bounceBars)], solidBars: [\(solidBars)], breakBars: [\(breakBars)])")
                     
                     
                 }
@@ -244,7 +246,7 @@ class LevelMakerScene: SKScene {
                     }
                     
                     let nextScene = LevelScene(gameData: GameData(ball: LMball, endZone: LMendZone, bounceBars: bounceBarArray, solidBars: solidBarArray, breakBars: breakBarArray))
-                    nextScene.menuButton.name = "LevelMakerScene"
+                    //nextScene.menuButton.name = "LevelMakerScene"
                     nextScene.scaleMode = .aspectFit
                     
                     self.scene?.view?.presentScene(nextScene, transition: SKTransition.fade(withDuration: 0.5))
@@ -263,7 +265,7 @@ class LevelMakerScene: SKScene {
                     lastSelectedObject.removeAllChildren()
                 }
                 if(touchedNode is BreakBar){
-                    lastSelectedBreakBar = touchedNode as! BreakBar!
+                    lastSelectedBreakBar = touchedNode as! BreakBar?
                 }
                 lastSelectedObject = touchedNode as! SKSpriteNode
                 lastSelectedObject.addChild(highLightBars)

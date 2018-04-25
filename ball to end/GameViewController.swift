@@ -7,28 +7,75 @@
 //
 
 import SpriteKit
+import GoogleMobileAds
 
-class GameViewController: UIViewController {
-
+class GameViewController: UIViewController, GADBannerViewDelegate{
+    
+    @IBOutlet weak var bannerView: GADBannerView!
+    @IBOutlet weak var publicView: UIView!
+    @IBOutlet weak var shopView: UIView!
+    @IBOutlet weak var playView: UIView!
+    
     override func viewDidLoad() {
+        print(123)
         super.viewDidLoad()
         
+      
+        // Gets and sets saved data
+        if let savedCompletedLevels: Array<Int> = UserDefaults.standard.object(forKey: Keys.completedLevels) as? Array<Int>{
+            completedLevels = savedCompletedLevels
+        }
+        
+        var numberOfPages: Int{
+            let num: Double = Double(levelDataArray.count)/30.0
+            return Int(num.rounded(.up))
+        }
+        
+        for page in 0...numberOfPages - 1
+        {
+            levelSelectScenes.append(LevelSelectScene(pageNum: page))
+        }
+        
+        
+        
+        /*
+        let request = GADRequest()
+        request.testDevices = [kGADSimulatorID]
+        
+        // REMOVE BEFORE SUBMITING
+        bannerView.isHidden = true
+        bannerView.adUnitID = "ca-app-pub-5829183895281971/3952983924"
+        
+        bannerView.rootViewController = self
+        bannerView.delegate = self
+        
+        bannerView.load(request)
+ 
+        
         if let view = self.view as! SKView? {
+           // let scene = UIStoryboard(name: "LauchScreen", bundle: nil)
             // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "MenuScene") {
+            let scene = SKScene(fileNamed: "MenuScene")
                 // Set the scale mode to scale to fit the window
-                scene.scaleMode = .aspectFit
-                
+            
+                scene?.scaleMode = .aspectFit
+            
                 // Present the scene
                 view.presentScene(scene)
-            }
+            
             
             view.ignoresSiblingOrder = true
-            view.showsFPS = true
-            view.showsNodeCount = true
+            
+            view.showsFPS = false
+            view.showsNodeCount = false
         }
+     */
+        
+        
+        
     }
-
+    
+    
     override var shouldAutorotate: Bool {
         return true
     }
@@ -49,4 +96,9 @@ class GameViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
+    
+    
 }
+
+
+
