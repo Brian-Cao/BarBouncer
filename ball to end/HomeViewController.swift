@@ -9,7 +9,7 @@
 import SpriteKit
 import GoogleMobileAds
 
-class GameViewController: UIViewController, GADBannerViewDelegate{
+class HomeViewController: UIViewController, GADBannerViewDelegate{
     
     @IBOutlet weak var bannerView: GADBannerView!
     @IBOutlet weak var publicView: UIView!
