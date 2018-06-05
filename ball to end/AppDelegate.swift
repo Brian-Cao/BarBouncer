@@ -14,6 +14,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        // Gets and sets saved data
+        if let savedCompletedLevels: Array<Int> = UserDefaults.standard.object(forKey: Keys.completedLevels) as? Array<Int>{
+            completedLevels = savedCompletedLevels
+        }
+        
+        var numberOfPages: Int{
+            let num: Double = Double(levelDataArray.count)/30.0
+            return Int(num.rounded(.up))
+        }
+        
+        
+        pageNumber = numberOfPages
         return true
     }
 

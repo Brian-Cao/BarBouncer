@@ -9,9 +9,9 @@
 import SpriteKit
 import os.log
 
-var screenSize = CGSize(width: 0, height: 0)
-let menuSceneBackgroundColor = UIColor(red: 30/255, green: 30/255, blue: 30/255, alpha: 1)
-var levelSelectScenes: Array<LevelSelectScene> = []
+//var screenSize = CGSize(width: 0, height: 0)
+//let menuSceneBackgroundColor = UIColor(red: 30/255, green: 30/255, blue: 30/255, alpha: 1)
+//var levelSelectScenes: Array<LevelSelectScene> = []
 var completedLevels: Array<Int> = []
 
 

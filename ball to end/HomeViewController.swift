@@ -9,6 +9,9 @@
 import SpriteKit
 import GoogleMobileAds
 
+var pageNumber = 0
+
+
 class HomeViewController: UIViewController, GADBannerViewDelegate{
     
     @IBOutlet weak var bannerView: GADBannerView!
@@ -17,27 +20,9 @@ class HomeViewController: UIViewController, GADBannerViewDelegate{
     @IBOutlet weak var playView: UIView!
     
     override func viewDidLoad() {
-        print(123)
+        
         super.viewDidLoad()
-        
-      
-        // Gets and sets saved data
-        if let savedCompletedLevels: Array<Int> = UserDefaults.standard.object(forKey: Keys.completedLevels) as? Array<Int>{
-            completedLevels = savedCompletedLevels
-        }
-        
-        var numberOfPages: Int{
-            let num: Double = Double(levelDataArray.count)/30.0
-            return Int(num.rounded(.up))
-        }
-        
-        for page in 0...numberOfPages - 1
-        {
-            levelSelectScenes.append(LevelSelectScene(pageNum: page))
-        }
-        
-        
-        
+ 
         /*
         let request = GADRequest()
         request.testDevices = [kGADSimulatorID]
