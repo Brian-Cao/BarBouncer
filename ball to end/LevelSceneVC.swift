@@ -10,9 +10,11 @@ import UIKit
 
 class LevelSceneVC: UIViewController {
 
+
+    @IBOutlet weak var GameView: LevelScene!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 

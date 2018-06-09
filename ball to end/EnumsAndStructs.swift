@@ -14,6 +14,8 @@ import os.log
 //var levelSelectScenes: Array<LevelSelectScene> = []
 var completedLevels: Array<Int> = []
 
+// Might want to get rid of this later
+var selectedLevel: Int = 1
 
 enum direction
 {

@@ -8,11 +8,18 @@
 
 import UIKit
 
+
 class LevelButtonCell: UICollectionViewCell {
 
 
     @IBOutlet weak var buttonView: UIButton!
     lazy var level = Int((self.buttonView.titleLabel?.text)!)!
+    
+    @IBAction func levelButtonTouchUpInside(_ sender: Any) {
+        selectedLevel = level
+        
+    }
+
     
 
 }

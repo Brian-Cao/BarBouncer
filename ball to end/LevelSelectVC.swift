@@ -13,7 +13,8 @@ class LevelSelectVC: UIViewController, UICollectionViewDataSource, UICollectionV
 
     @IBOutlet weak var levelCollectionView: UICollectionView!
     var levelSet = 0
-
+    var levelCells:[LevelButtonCell] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let itemsize = levelCollectionView.bounds.size.width/5 - 12
@@ -35,20 +36,11 @@ class LevelSelectVC: UIViewController, UICollectionViewDataSource, UICollectionV
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! LevelButtonCell
-        cell.buttonView.setTitle("\((30*levelSet) + (indexPath.item + 1))", for: .normal)
-
+        let cellNumber = (30*levelSet) + (indexPath.item + 1)
+        cell.buttonView.setTitle("\(cellNumber)", for: .normal)
+        levelCells.append(cell)
         return cell
     }
     
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
