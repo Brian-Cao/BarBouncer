@@ -49,7 +49,7 @@ class LevelSelectVC: UIViewController, UICollectionViewDelegate, UICollectionVie
      */
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return levelDataArray.count/30
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

@@ -10,6 +10,8 @@ import UIKit
 
 class LevelGridCell: UICollectionViewCell {
     
+    @IBOutlet fileprivate weak var levelCollectionView: UICollectionView!
     
     
 }
+

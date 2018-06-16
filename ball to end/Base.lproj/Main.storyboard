@@ -131,7 +131,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GridCell" id="Dmi-UN-1RR" customClass="LevelGridCell" customModule="BarBouncer" customModuleProvider="target">
-                                        <rect key="frame" x="37" y="62" width="300" height="354"/>
+                                        <rect key="frame" x="37.666666666666664" y="61.666666666666664" width="300" height="354"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="354"/>
@@ -187,6 +187,9 @@
                                             <constraint firstItem="rOk-Yv-g6i" firstAttribute="centerY" secondItem="Dmi-UN-1RR" secondAttribute="centerY" id="fCG-gH-MDL"/>
                                         </constraints>
                                         <size key="customSize" width="300" height="354"/>
+                                        <connections>
+                                            <outlet property="levelCollectionView" destination="rOk-Yv-g6i" id="pGb-Vk-VGd"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
