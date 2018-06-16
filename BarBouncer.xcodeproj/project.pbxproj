@@ -18,7 +18,7 @@
 		A708DABB1F191E0000487BB3 /* BarClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A708DABA1F191E0000487BB3 /* BarClass.swift */; };
 		A7131B781FFDCF0100CCAE13 /* BarFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7131B771FFDCF0100CCAE13 /* BarFactory.swift */; };
 		A7131B7A1FFF35A300CCAE13 /* SwitchBarClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7131B791FFF35A300CCAE13 /* SwitchBarClass.swift */; };
-		A71614D520B59B42004FD112 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71614D420B59B42004FD112 /* Button.swift */; };
+		A71614D520B59B42004FD112 /* LevelButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71614D420B59B42004FD112 /* LevelButtonCell.swift */; };
 		A71963D01EBC022500B079AA /* SolidBarClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71963CF1EBC022500B079AA /* SolidBarClass.swift */; };
 		A737A3021F04B49600B9AAB9 /* BreakBarClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A737A3011F04B49600B9AAB9 /* BreakBarClass.swift */; };
 		A73B67E11F8F181C00C788B6 /* EnumsAndStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73B67E01F8F181C00C788B6 /* EnumsAndStructs.swift */; };
@@ -26,6 +26,7 @@
 		A76F5E1F2095AC43009CAE45 /* LevelSelectPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F5E1E2095AC43009CAE45 /* LevelSelectPageVC.swift */; };
 		A76F5E222095ACFF009CAE45 /* LevelSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F5E212095ACFF009CAE45 /* LevelSelectVC.swift */; };
 		A77933441F224A3D00591125 /* HighLightBarsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77933431F224A3D00591125 /* HighLightBarsClass.swift */; };
+		A78250BE20CD5FFC003DDCEA /* LevelGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78250BD20CD5FFC003DDCEA /* LevelGridCell.swift */; };
 		A7974D491EEB59DF0079796A /* LevelDataArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7974D481EEB59DF0079796A /* LevelDataArray.swift */; };
 		A7A6E28420BA51B000A9CD70 /* LevelSceneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A6E28320BA51B000A9CD70 /* LevelSceneVC.swift */; };
 		A7A723DD1F70E0390074E7FA /* MenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A7A723DC1F70E0390074E7FA /* MenuScene.sks */; };
@@ -78,7 +79,7 @@
 		A708DABA1F191E0000487BB3 /* BarClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarClass.swift; sourceTree = "<group>"; };
 		A7131B771FFDCF0100CCAE13 /* BarFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarFactory.swift; sourceTree = "<group>"; };
 		A7131B791FFF35A300CCAE13 /* SwitchBarClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchBarClass.swift; sourceTree = "<group>"; };
-		A71614D420B59B42004FD112 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Button.swift; path = ../Button.swift; sourceTree = "<group>"; };
+		A71614D420B59B42004FD112 /* LevelButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LevelButtonCell.swift; path = ../LevelButtonCell.swift; sourceTree = "<group>"; };
 		A71963CF1EBC022500B079AA /* SolidBarClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolidBarClass.swift; sourceTree = "<group>"; };
 		A737A3011F04B49600B9AAB9 /* BreakBarClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreakBarClass.swift; sourceTree = "<group>"; };
 		A73B67E01F8F181C00C788B6 /* EnumsAndStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumsAndStructs.swift; sourceTree = "<group>"; };
@@ -87,6 +88,7 @@
 		A76F5E1E2095AC43009CAE45 /* LevelSelectPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSelectPageVC.swift; sourceTree = "<group>"; };
 		A76F5E212095ACFF009CAE45 /* LevelSelectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSelectVC.swift; sourceTree = "<group>"; };
 		A77933431F224A3D00591125 /* HighLightBarsClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighLightBarsClass.swift; sourceTree = "<group>"; };
+		A78250BD20CD5FFC003DDCEA /* LevelGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelGridCell.swift; sourceTree = "<group>"; };
 		A7974D481EEB59DF0079796A /* LevelDataArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelDataArray.swift; sourceTree = "<group>"; };
 		A7A6E28320BA51B000A9CD70 /* LevelSceneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSceneVC.swift; sourceTree = "<group>"; };
 		A7A723DC1F70E0390074E7FA /* MenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = MenuScene.sks; path = ../MenuScene.sks; sourceTree = "<group>"; };
@@ -212,11 +214,9 @@
 			children = (
 				A7034A2A1EB16D8500646900 /* Main.storyboard */,
 				A7034A281EB16D8500646900 /* HomeViewController.swift */,
-				A76F5E1E2095AC43009CAE45 /* LevelSelectPageVC.swift */,
-				A76F5E212095ACFF009CAE45 /* LevelSelectVC.swift */,
 				A7A6E28320BA51B000A9CD70 /* LevelSceneVC.swift */,
-				A7DA77BA1F141D0A00BB640F /* LevelMakerScene.swift */,
 				A7EC5E281EE9E2E800FCC555 /* LevelScene.swift */,
+				A7DA77BA1F141D0A00BB640F /* LevelMakerScene.swift */,
 				A7041DB31F832C3F00EEE8A2 /* SKScenes */,
 			);
 			name = Scenes;
@@ -246,6 +246,7 @@
 		A76F5E202095AC50009CAE45 /* Trash Files */ = {
 			isa = PBXGroup;
 			children = (
+				A76F5E1E2095AC43009CAE45 /* LevelSelectPageVC.swift */,
 				A747CF2F20C9626200FC2BEC /* levelSceneSegue.swift */,
 				A7E8944C1EB509260080B662 /* LevelSelectScene.swift */,
 				A7A723DC1F70E0390074E7FA /* MenuScene.sks */,
@@ -259,7 +260,9 @@
 			isa = PBXGroup;
 			children = (
 				A7EC5E2A1EEA109F00FCC555 /* GameData.swift */,
-				A71614D420B59B42004FD112 /* Button.swift */,
+				A76F5E212095ACFF009CAE45 /* LevelSelectVC.swift */,
+				A78250BD20CD5FFC003DDCEA /* LevelGridCell.swift */,
+				A71614D420B59B42004FD112 /* LevelButtonCell.swift */,
 			);
 			name = LevelClasses;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7EF50611EB3F92C00B4B927 /* EndZoneClass.swift in Sources */,
+				A78250BE20CD5FFC003DDCEA /* LevelGridCell.swift in Sources */,
 				A76F5E1F2095AC43009CAE45 /* LevelSelectPageVC.swift in Sources */,
 				A7131B7A1FFF35A300CCAE13 /* SwitchBarClass.swift in Sources */,
 				A7034A291EB16D8500646900 /* HomeViewController.swift in Sources */,
@@ -433,7 +437,7 @@
 				A7D7AFF71EB5321B00A54EF0 /* LevelButtonClass.swift in Sources */,
 				A7974D491EEB59DF0079796A /* LevelDataArray.swift in Sources */,
 				A77933441F224A3D00591125 /* HighLightBarsClass.swift in Sources */,
-				A71614D520B59B42004FD112 /* Button.swift in Sources */,
+				A71614D520B59B42004FD112 /* LevelButtonCell.swift in Sources */,
 				A747CF3020C9626200FC2BEC /* levelSceneSegue.swift in Sources */,
 				A76F5E222095ACFF009CAE45 /* LevelSelectVC.swift in Sources */,
 				A7034A571EB16FD500646900 /* BallClass.swift in Sources */,

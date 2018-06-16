@@ -8,20 +8,16 @@
 
 import UIKit
 
-class LevelSelectVC: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
+class LevelSelectVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
     
-
-    @IBOutlet weak var levelCollectionView: UICollectionView!
+    
+    
     var levelSet = 0
     var levelCells:[LevelButtonCell] = []
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        let itemsize = levelCollectionView.bounds.size.width/5 - 12
-        let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: itemsize, height: itemsize)
-        layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10)
-        levelCollectionView.collectionViewLayout = layout
+       
 
     }
 
@@ -30,17 +26,38 @@ class LevelSelectVC: UIViewController, UICollectionViewDataSource, UICollectionV
         // Dispose of any resources that can be recreated.
     }
     
+    /*
+     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return model.count
+     }
+     
+     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        return cell
+     }
+     
+     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard let tableViewCell = cell as? TableViewCell else { return }
+        tableViewCell.setCollectionViewDataSourceDelegate(self, forRow: indexPath.row)
+        tableViewCell.collectionViewOffset = storedOffsets[indexPath.row] ?? 0
+     }
+
+     override func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard let tableViewCell = cell as? TableViewCell else { return }
+        storedOffsets[indexPath.row] = tableViewCell.collectionViewOffset
+     }
+     */
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 30
+        return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! LevelButtonCell
-        let cellNumber = (30*levelSet) + (indexPath.item + 1)
-        cell.buttonView.setTitle("\(cellNumber)", for: .normal)
-        levelCells.append(cell)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GridCell", for: indexPath) as! LevelGridCell
         return cell
     }
     
     
+    
 }
+
