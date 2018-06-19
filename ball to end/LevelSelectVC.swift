@@ -8,56 +8,43 @@
 
 import UIKit
 
-class LevelSelectVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
+class LevelSelectVC: UIViewController{
     
-    
-    
-    var levelSet = 0
-    var levelCells:[LevelButtonCell] = []
+    @IBOutlet weak var levelGridCollectionView: UICollectionView!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-       
-
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-    /*
-     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return model.count
-     }
-     
-     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        return cell
-     }
-     
-     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        guard let tableViewCell = cell as? TableViewCell else { return }
-        tableViewCell.setCollectionViewDataSourceDelegate(self, forRow: indexPath.row)
-        tableViewCell.collectionViewOffset = storedOffsets[indexPath.row] ?? 0
-     }
-
-     override func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        guard let tableViewCell = cell as? TableViewCell else { return }
-        storedOffsets[indexPath.row] = tableViewCell.collectionViewOffset
-     }
-     */
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return levelDataArray.count/30
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GridCell", for: indexPath) as! LevelGridCell
-        return cell
-    }
-    
-    
+//    override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+//
+//        // Setting each gridCell's delegate to self (LevelSelectSceneVC) just before the cell is displayed "willDisplay"
+//
+//        guard let gridCell = cell as? LevelGridCollectionViewCell else { return }
+//
+//        gridCell.setCollectionViewDataSourceDelegate(delegate: self, forRow: indexPath.row)
+//
+//    }
     
 }
+
+extension LevelSelectVC: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        // Setting number of Sections
+        
+        return 5
+        
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        // Setting each cell to be a "GridCell"
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GridCell", for: indexPath) as! LevelGridCollectionViewCell
+        
+        return cell
+        
+    }
+}
+
 

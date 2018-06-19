@@ -17,13 +17,13 @@ class LevelSelectPageVC: UIPageViewController, UIPageViewControllerDataSource {
         let numberOfPages: Int = levelDataArray.count/30 - 1
 
         var vcArray: [UIViewController] = []
-
-        for page in 0...10 {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "LevelSelectVC") as! LevelSelectVC
-            vc.levelSet = page
-            vcArray.append(vc)
-        }
+//
+//        for page in 0...10 {
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let vc = storyboard.instantiateViewController(withIdentifier: "LevelSelectVC") as! LevelSelectVC
+//            vc.levelSet = page
+//            vcArray.append(vc)
+//        }
 
         return vcArray
         

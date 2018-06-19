@@ -15,9 +15,6 @@ var pageNumber = 0
 class HomeViewController: UIViewController, GADBannerViewDelegate{
     
     @IBOutlet weak var bannerView: GADBannerView!
-    @IBOutlet weak var publicView: UIView!
-    @IBOutlet weak var shopView: UIView!
-    @IBOutlet weak var playView: UIView!
     
     override func viewDidLoad() {
         
