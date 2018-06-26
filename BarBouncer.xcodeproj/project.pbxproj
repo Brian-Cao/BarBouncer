@@ -248,7 +248,7 @@
 		A76F5E202095AC50009CAE45 /* Trash Files */ = {
 			isa = PBXGroup;
 			children = (
-				A71614D420B59B42004FD112 /* LevelCollectionCell.swift */,
+				A78250BD20CD5FFC003DDCEA /* LevelGridCollectionViewCell.swift */,
 				A76F5E1E2095AC43009CAE45 /* LevelSelectPageVC.swift */,
 				A747CF2F20C9626200FC2BEC /* levelSceneSegue.swift */,
 				A7E8944C1EB509260080B662 /* LevelSelectScene.swift */,
@@ -264,7 +264,7 @@
 			children = (
 				A7EC5E2A1EEA109F00FCC555 /* GameData.swift */,
 				A76F5E212095ACFF009CAE45 /* LevelSelectVC.swift */,
-				A78250BD20CD5FFC003DDCEA /* LevelGridCollectionViewCell.swift */,
+				A71614D420B59B42004FD112 /* LevelCollectionCell.swift */,
 			);
 			name = LevelClasses;
 			sourceTree = "<group>";
