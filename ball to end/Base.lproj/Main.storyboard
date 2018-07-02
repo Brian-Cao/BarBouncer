@@ -58,10 +58,10 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Title" translatesAutoresizingMaskIntoConstraints="NO" id="LrA-cG-15Y">
-                                <rect key="frame" x="17" y="99" width="358" height="267"/>
+                                <rect key="frame" x="8.6666666666666572" y="103" width="358" height="267"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="267" id="E7n-Wk-ou0"/>
-                                    <constraint firstAttribute="width" constant="358" id="qe1-4w-QGK"/>
+                                    <constraint firstAttribute="width" constant="358" id="01m-f4-rmM"/>
+                                    <constraint firstAttribute="height" constant="267" id="L0I-Sf-leF"/>
                                     <constraint firstAttribute="width" secondItem="LrA-cG-15Y" secondAttribute="height" multiplier="358:267" id="tfD-ZF-C8F"/>
                                 </constraints>
                             </imageView>
@@ -70,14 +70,13 @@
                         <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="a6w-hk-UW5" firstAttribute="trailing" secondItem="lMP-CS-9w8" secondAttribute="trailing" constant="41" id="2bZ-ap-G6p"/>
-                            <constraint firstItem="a6w-hk-UW5" firstAttribute="trailing" secondItem="LrA-cG-15Y" secondAttribute="trailing" id="3zB-AY-6vs"/>
-                            <constraint firstItem="LrA-cG-15Y" firstAttribute="leading" secondItem="a6w-hk-UW5" secondAttribute="leading" constant="17" id="ClK-eS-Yzh"/>
+                            <constraint firstItem="LrA-cG-15Y" firstAttribute="centerX" secondItem="a6w-hk-UW5" secondAttribute="centerX" id="351-cz-l6n"/>
                             <constraint firstItem="oUO-tL-PYE" firstAttribute="centerX" secondItem="a6w-hk-UW5" secondAttribute="centerX" id="IEi-me-PML"/>
                             <constraint firstItem="a6w-hk-UW5" firstAttribute="bottom" secondItem="lMP-CS-9w8" secondAttribute="bottom" constant="205" id="KkH-zm-WKs"/>
                             <constraint firstItem="a6w-hk-UW5" firstAttribute="bottom" secondItem="4Wt-F5-Lmu" secondAttribute="bottom" constant="205" id="NHy-vf-AQS"/>
                             <constraint firstItem="4Wt-F5-Lmu" firstAttribute="leading" secondItem="a6w-hk-UW5" secondAttribute="leading" constant="41" id="NiB-Ww-2PH"/>
-                            <constraint firstItem="LrA-cG-15Y" firstAttribute="top" secondItem="a6w-hk-UW5" secondAttribute="top" constant="55" id="PMh-Li-XCB"/>
                             <constraint firstItem="a6w-hk-UW5" firstAttribute="bottom" secondItem="oUO-tL-PYE" secondAttribute="bottom" id="YnN-UA-tVK"/>
+                            <constraint firstItem="LrA-cG-15Y" firstAttribute="top" secondItem="a6w-hk-UW5" secondAttribute="top" constant="59" id="j34-0i-dym"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="a6w-hk-UW5"/>
                     </view>
@@ -98,7 +97,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1rc-Hk-e7e" userLabel="LevelGridCollectionView">
-                                <rect key="frame" x="0.0" y="90" width="375" height="688"/>
+                                <rect key="frame" x="0.0" y="89.666666666666686" width="375" height="688.33333333333326"/>
                                 <color key="backgroundColor" red="0.2024929523" green="0.20121890310000001" blue="0.20347523689999999" alpha="1" colorSpace="deviceRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="5" id="l5N-rb-yli">
                                     <size key="itemSize" width="40" height="40"/>
@@ -131,7 +130,7 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                     <connections>
-                                                        <action selector="buttonTouched:" destination="3fe-JG-W9x" eventType="touchUpInside" id="PaQ-9p-v6W"/>
+                                                        <action selector="buttonTouched:" destination="3fe-JG-W9x" eventType="touchUpInside" id="0p3-Sx-Cxv"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -173,35 +172,32 @@
                                     <segue destination="BV1-FR-VrT" kind="show" id="SqA-eQ-uI5"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Levels" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDd-RN-cJz">
-                                <rect key="frame" x="103" y="48" width="169" height="42"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Levels" translatesAutoresizingMaskIntoConstraints="NO" id="BYr-Sr-9Gh">
+                                <rect key="frame" x="127.66666666666669" y="46.666666666666657" width="120" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="Fo7-a6-aEc"/>
-                                    <constraint firstAttribute="width" constant="169" id="lJy-u7-7nv"/>
+                                    <constraint firstAttribute="height" constant="45" id="fzH-CZ-FFN"/>
+                                    <constraint firstAttribute="width" constant="120" id="hGH-Z7-89z"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.2024929523" green="0.20121890310000001" blue="0.20347523689999999" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
                             <constraint firstItem="NOn-qw-8eZ" firstAttribute="centerX" secondItem="eqv-ia-THh" secondAttribute="centerX" id="6go-Go-cZX"/>
                             <constraint firstItem="Bsq-h4-77u" firstAttribute="leading" secondItem="eqv-ia-THh" secondAttribute="leading" constant="16" id="8lQ-oU-2Po"/>
+                            <constraint firstItem="1rc-Hk-e7e" firstAttribute="top" secondItem="BYr-Sr-9Gh" secondAttribute="bottom" constant="-2" id="9vU-HI-EK4"/>
                             <constraint firstItem="1rc-Hk-e7e" firstAttribute="trailing" secondItem="eqv-ia-THh" secondAttribute="trailing" id="DEO-uc-ch8"/>
-                            <constraint firstItem="CDd-RN-cJz" firstAttribute="centerY" secondItem="Bsq-h4-77u" secondAttribute="centerY" id="Gnx-kJ-sTR"/>
+                            <constraint firstItem="BYr-Sr-9Gh" firstAttribute="centerY" secondItem="Bsq-h4-77u" secondAttribute="centerY" id="Hef-vS-mbP"/>
                             <constraint firstItem="1rc-Hk-e7e" firstAttribute="bottom" secondItem="eqv-ia-THh" secondAttribute="bottom" id="LMd-B2-Tq3"/>
                             <constraint firstItem="1rc-Hk-e7e" firstAttribute="leading" secondItem="eqv-ia-THh" secondAttribute="leading" id="P8d-Ru-sOQ"/>
-                            <constraint firstItem="CDd-RN-cJz" firstAttribute="centerX" secondItem="eqv-ia-THh" secondAttribute="centerX" id="RI9-cT-qGd"/>
-                            <constraint firstItem="1rc-Hk-e7e" firstAttribute="top" secondItem="CDd-RN-cJz" secondAttribute="bottom" id="SJX-lm-eWw"/>
                             <constraint firstItem="eqv-ia-THh" firstAttribute="bottom" secondItem="NOn-qw-8eZ" secondAttribute="bottom" id="c7B-ri-ejP"/>
+                            <constraint firstItem="BYr-Sr-9Gh" firstAttribute="centerX" secondItem="eqv-ia-THh" secondAttribute="centerX" id="rK7-ZC-PvR"/>
                             <constraint firstItem="Bsq-h4-77u" firstAttribute="top" secondItem="eqv-ia-THh" secondAttribute="top" id="xw4-rp-xQt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eqv-ia-THh"/>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="1rc-Hk-e7e" id="NM6-B3-v1m"/>
-                        <segue destination="BHN-cl-PeD" kind="show" identifier="moveToLevelScene" id="fJW-Ep-JNB"/>
+                        <segue destination="BHN-cl-PeD" kind="showDetail" identifier="moveToLevelScene" id="yDa-jT-t5s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Et-wP-H25" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -211,22 +207,11 @@
         <!--Level SceneVC-->
         <scene sceneID="AxO-RL-7cW">
             <objects>
-                <viewController id="BHN-cl-PeD" customClass="LevelSceneVC" sceneMemberID="viewController">
+                <viewController id="BHN-cl-PeD" customClass="LevelSceneVC" customModule="BarBouncer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HtY-ye-gnp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <skView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rVL-RN-2aG">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                            </skView>
-                        </subviews>
                         <color key="backgroundColor" red="0.2024929523" green="0.20121890310000001" blue="0.20347523689999999" alpha="1" colorSpace="deviceRGB"/>
-                        <constraints>
-                            <constraint firstItem="rVL-RN-2aG" firstAttribute="leading" secondItem="88d-4s-vrg" secondAttribute="leading" id="7j8-Rn-Q01"/>
-                            <constraint firstItem="rVL-RN-2aG" firstAttribute="top" secondItem="HtY-ye-gnp" secondAttribute="top" id="L0f-QX-0GR"/>
-                            <constraint firstItem="rVL-RN-2aG" firstAttribute="trailing" secondItem="88d-4s-vrg" secondAttribute="trailing" id="cwL-cv-vn0"/>
-                            <constraint firstAttribute="bottom" secondItem="rVL-RN-2aG" secondAttribute="bottom" id="zyv-P1-BKS"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="88d-4s-vrg"/>
                     </view>
                 </viewController>
@@ -237,6 +222,7 @@
     </scenes>
     <resources>
         <image name="BackIconTab" width="25" height="25"/>
+        <image name="Levels" width="266" height="100"/>
         <image name="PlayButton" width="120" height="45"/>
         <image name="ShopButton" width="120" height="45"/>
         <image name="Title" width="266" height="200"/>

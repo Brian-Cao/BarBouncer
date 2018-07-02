@@ -9,8 +9,6 @@
 import SpriteKit
 import GoogleMobileAds
 
-var pageNumber = 0
-
 
 class HomeViewController: UIViewController, GADBannerViewDelegate{
     

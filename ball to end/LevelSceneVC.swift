@@ -7,13 +7,28 @@
 //
 
 import UIKit
+import SpriteKit
+
+// Not scaling correctly bc it takes the bar size literaly
 
 class LevelSceneVC: UIViewController {
-
+    
+    var gameView = SKView()
+    var gameScene = SKScene()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        gameView = SKView(frame: UIScreen.main.bounds)
+        
+        self.view.addSubview(gameView)
+        
+        gameScene = LevelScene(levelNumber: 1)
+        print(gameScene.frame.height)
+        gameView.presentScene(gameScene)
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

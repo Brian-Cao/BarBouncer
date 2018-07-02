@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         
-        pageNumber = numberOfPages
+
         return true
     }
 

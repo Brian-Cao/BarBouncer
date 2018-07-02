@@ -58,7 +58,7 @@ class LevelSelectVC: UIViewController, UICollectionViewDelegate, UICollectionVie
         
         // Move to Level Scene
         selectedLevel = button.tag
-        self.performSegue(withIdentifier: "moveToLevelScene", sender: button)
+        self.performSegue(withIdentifier: "moveToLevelScene", sender: nil)
         
     }
     
