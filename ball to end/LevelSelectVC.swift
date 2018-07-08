@@ -11,11 +11,11 @@ import UIKit
 class LevelSelectVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
     
     @IBOutlet weak var collectionView: UICollectionView!
+    var selectedLevelNumber = 1
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
         
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         
@@ -30,16 +30,16 @@ class LevelSelectVC: UIViewController, UICollectionViewDelegate, UICollectionVie
         
         collectionView.collectionViewLayout = layout
         
-
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 30
+        
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 9
+        return 10
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -50,15 +50,21 @@ class LevelSelectVC: UIViewController, UICollectionViewDelegate, UICollectionVie
         cell.buttonView.tag = cellNumber
         
         return cell
+        
     }
     
     @IBAction func buttonTouched(_ sender: Any) {
         let button = sender as! UIButton
-        print(Int((button.titleLabel?.text)!)!)
         
         // Move to Level Scene
-        selectedLevel = button.tag
+        selectedLevelNumber = button.tag
         self.performSegue(withIdentifier: "moveToLevelScene", sender: nil)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextScene: LevelSceneVC = segue.destination as! LevelSceneVC
+        nextScene.selectedLevelNumber = selectedLevelNumber
         
     }
     

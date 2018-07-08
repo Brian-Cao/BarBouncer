@@ -15,7 +15,6 @@ import os.log
 var completedLevels: Array<Int> = []
 
 // Might want to get rid of this later
-var selectedLevel: Int = 1
 
 enum direction
 {

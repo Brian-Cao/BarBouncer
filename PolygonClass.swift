@@ -11,7 +11,7 @@ import SpriteKit
 class Polygon: SKSpriteNode{
     
     init(x: CGFloat, y: CGFloat){
-        super.init(texture: SKTexture(imageNamed: "Polygon"), color: UIColor.white, size: CGSize(width: 60, height: 60))
+      super.init(texture: SKTexture(imageNamed: "Polygon"), color: UIColor.white, size: CGSize(width: 24, height: 24))
         //super properties
         self.physicsBody = SKPhysicsBody(circleOfRadius: self.size.width/2)
         self.physicsBody?.isDynamic = false
@@ -24,6 +24,7 @@ class Polygon: SKSpriteNode{
     func clone() -> Polygon {
         return Polygon(x: position.x, y: position.y)
     }
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

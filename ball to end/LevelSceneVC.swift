@@ -11,10 +11,11 @@ import SpriteKit
 
 // Not scaling correctly bc it takes the bar size literaly
 
-class LevelSceneVC: UIViewController {
+class LevelSceneVC: UIViewController, LevelPresentingDelegate {
     
+    var selectedLevelNumber = 1
     var gameView = SKView()
-    var gameScene = SKScene()
+    var gameScene: LevelScene!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,14 +24,16 @@ class LevelSceneVC: UIViewController {
         
         self.view.addSubview(gameView)
         
-        gameScene = LevelScene(levelNumber: 1)
-        print(gameScene.frame.height)
-        gameView.presentScene(gameScene)
-        
-        
+        presentLevel(levelNumber: selectedLevelNumber)
         
     }
-
+    
+    func presentLevel(levelNumber: Int) {
+        let newScene = LevelScene(levelNumber: levelNumber)
+        newScene.presentingDelegate = self
+        gameView.presentScene(newScene)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
