@@ -197,7 +197,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="1rc-Hk-e7e" id="NM6-B3-v1m"/>
-                        <segue destination="BHN-cl-PeD" kind="showDetail" identifier="moveToLevelScene" id="yDa-jT-t5s"/>
+                        <segue destination="BHN-cl-PeD" kind="showDetail" identifier="MoveToLevelScene" id="yDa-jT-t5s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Et-wP-H25" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -211,31 +211,16 @@
                     <view key="view" contentMode="scaleToFill" id="HtY-ye-gnp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XxW-gc-gg3">
-                                <rect key="frame" x="16" y="44" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="IEi-xZ-7fZ"/>
-                                    <constraint firstAttribute="width" constant="50" id="Rld-fN-C9o"/>
-                                    <constraint firstAttribute="width" secondItem="XxW-gc-gg3" secondAttribute="height" multiplier="1:1" id="t4A-hZ-Lq4"/>
-                                </constraints>
-                                <state key="normal" image="BackIconTab"/>
-                                <connections>
-                                    <segue destination="3fe-JG-W9x" kind="show" id="XEa-6p-RH0"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" red="0.2024929523" green="0.20121890310000001" blue="0.20347523689999999" alpha="1" colorSpace="deviceRGB"/>
-                        <constraints>
-                            <constraint firstItem="XxW-gc-gg3" firstAttribute="leading" secondItem="88d-4s-vrg" secondAttribute="leading" constant="16" id="9G0-4W-Vhg"/>
-                            <constraint firstItem="XxW-gc-gg3" firstAttribute="top" secondItem="88d-4s-vrg" secondAttribute="top" id="lNC-y0-lbf"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="88d-4s-vrg"/>
                     </view>
+                    <connections>
+                        <segue destination="3fe-JG-W9x" kind="show" identifier="MoveToLevelSelectScene" id="EFh-Oq-EXd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="STC-dC-3Cb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3460" y="40.64039408866995"/>
+            <point key="canvasLocation" x="3516" y="41"/>
         </scene>
     </scenes>
     <resources>
@@ -246,6 +231,7 @@
         <image name="Title" width="266" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XEa-6p-RH0"/>
+        <segue reference="yDa-jT-t5s"/>
+        <segue reference="EFh-Oq-EXd"/>
     </inferredMetricsTieBreakers>
 </document>

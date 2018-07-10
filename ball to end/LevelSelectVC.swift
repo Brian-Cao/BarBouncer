@@ -58,13 +58,17 @@ class LevelSelectVC: UIViewController, UICollectionViewDelegate, UICollectionVie
         
         // Move to Level Scene
         selectedLevelNumber = button.tag
-        self.performSegue(withIdentifier: "moveToLevelScene", sender: nil)
+        self.performSegue(withIdentifier: "MoveToLevelScene", sender: nil)
         
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let nextScene: LevelSceneVC = segue.destination as! LevelSceneVC
-        nextScene.selectedLevelNumber = selectedLevelNumber
+        
+        if(segue.identifier == "MoveToLevelScene"){
+            let nextScene: LevelSceneVC = segue.destination as! LevelSceneVC
+            nextScene.selectedLevelNumber = selectedLevelNumber
+            
+        }
         
     }
     

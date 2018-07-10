@@ -9,23 +9,46 @@
 import UIKit
 import SpriteKit
 
-// Not scaling correctly bc it takes the bar size literaly
-
 class LevelSceneVC: UIViewController, LevelPresentingDelegate {
     
     var selectedLevelNumber = 1
-    var gameView = SKView()
-    var gameScene: LevelScene!
+    
+    var gameView: SKView = {
+        var view = SKView()
+        view = SKView(frame: UIScreen.main.bounds)
+        return view
+    }()
+    
+    var backButton: UIButton = {
+        let button = UIButton()
+        button.setImage(UIImage(named: "BackIconTab"), for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        
+        button.addTarget(self, action: #selector(backButtonAction), for: .touchUpInside)
+        
+        return button
+    }()
+    
+    @objc func backButtonAction(sender: UIButton!) {
+        self.performSegue(withIdentifier: "MoveToLevelSelectScene", sender: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        gameView = SKView(frame: UIScreen.main.bounds)
         
         self.view.addSubview(gameView)
+        self.view.addSubview(backButton)
+        
+        setUpLayouts()
         
         presentLevel(levelNumber: selectedLevelNumber)
-        
+    }
+    
+    private func setUpLayouts(){
+        backButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        backButton.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        backButton.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 16).isActive = true
+        backButton.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor).isActive = true
     }
     
     func presentLevel(levelNumber: Int) {
@@ -34,20 +57,4 @@ class LevelSceneVC: UIViewController, LevelPresentingDelegate {
         gameView.presentScene(newScene)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
