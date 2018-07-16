@@ -23,9 +23,7 @@ class LevelSceneVC: UIViewController, LevelPresentingDelegate {
         let button = UIButton()
         button.setImage(UIImage(named: "BackIconTab"), for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
-        
         button.addTarget(self, action: #selector(backButtonAction), for: .touchUpInside)
-        
         return button
     }()
     

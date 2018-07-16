@@ -12,5 +12,11 @@ import UIKit
 class LevelCollectionCell: UICollectionViewCell {
 
     @IBOutlet weak var buttonView: UIButton!
+    var isComplete = false
+    
+    func setToComplete() {
+        buttonView.backgroundColor = UIColor.green
+        isComplete = true
+    }
     
 }
