@@ -26,56 +26,12 @@
                                     <constraint firstAttribute="height" constant="50" id="rFc-8R-A28"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Wt-F5-Lmu">
-                                <rect key="frame" x="41" y="528" width="120" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="4Wt-F5-Lmu" secondAttribute="height" multiplier="8:3" id="OMX-4N-6ex"/>
-                                </constraints>
-                                <state key="normal" image="ShopButton"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="4"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMP-CS-9w8">
-                                <rect key="frame" x="214" y="528" width="120" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="lMP-CS-9w8" secondAttribute="height" multiplier="8:3" id="l5L-cw-zAB"/>
-                                </constraints>
-                                <state key="normal" image="PlayButton"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="4"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="3fe-JG-W9x" kind="show" id="MEt-2T-MNx"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Title" translatesAutoresizingMaskIntoConstraints="NO" id="LrA-cG-15Y">
-                                <rect key="frame" x="35" y="94" width="304" height="227"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="LrA-cG-15Y" secondAttribute="height" multiplier="304:227" id="xg1-Hr-a6R"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.2024929523" green="0.20121890310000001" blue="0.20347523689999999" alpha="1" colorSpace="deviceRGB"/>
                         <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="LrA-cG-15Y" firstAttribute="centerX" secondItem="a6w-hk-UW5" secondAttribute="centerX" id="351-cz-l6n"/>
-                            <constraint firstItem="lMP-CS-9w8" firstAttribute="width" secondItem="3se-qz-xqx" secondAttribute="height" multiplier="30:203" id="EVO-X9-JtC"/>
                             <constraint firstItem="oUO-tL-PYE" firstAttribute="centerX" secondItem="a6w-hk-UW5" secondAttribute="centerX" id="IEi-me-PML"/>
-                            <constraint firstItem="a6w-hk-UW5" firstAttribute="bottom" secondItem="lMP-CS-9w8" secondAttribute="bottom" constant="205" id="KkH-zm-WKs"/>
-                            <constraint firstItem="a6w-hk-UW5" firstAttribute="bottom" secondItem="4Wt-F5-Lmu" secondAttribute="bottom" constant="205" id="NHy-vf-AQS"/>
                             <constraint firstItem="a6w-hk-UW5" firstAttribute="bottom" secondItem="oUO-tL-PYE" secondAttribute="bottom" id="YnN-UA-tVK"/>
-                            <constraint firstItem="4Wt-F5-Lmu" firstAttribute="width" secondItem="3se-qz-xqx" secondAttribute="height" multiplier="30:203" id="ZFv-3r-tRf"/>
-                            <constraint firstItem="a6w-hk-UW5" firstAttribute="trailing" secondItem="lMP-CS-9w8" secondAttribute="trailing" constant="41" id="ckb-r9-eAf"/>
-                            <constraint firstItem="LrA-cG-15Y" firstAttribute="top" secondItem="a6w-hk-UW5" secondAttribute="top" constant="50" id="mRW-Dq-md0"/>
-                            <constraint firstItem="LrA-cG-15Y" firstAttribute="width" secondItem="3se-qz-xqx" secondAttribute="height" multiplier="76:203" id="o4W-Jr-SIb"/>
-                            <constraint firstItem="4Wt-F5-Lmu" firstAttribute="leading" secondItem="a6w-hk-UW5" secondAttribute="leading" constant="41" id="w47-sM-RYp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="a6w-hk-UW5"/>
                     </view>
@@ -87,15 +43,15 @@
             </objects>
             <point key="canvasLocation" x="1853.5999999999999" y="41.379310344827587"/>
         </scene>
-        <!--Level SelectVC-->
+        <!--View Controller-->
         <scene sceneID="8AQ-3P-sZT">
             <objects>
-                <viewController storyboardIdentifier="LevelSelectVC" id="3fe-JG-W9x" customClass="LevelSelectVC" customModule="BarBouncer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LevelSelectVC" id="3fe-JG-W9x" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fgg-No-nIv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1rc-Hk-e7e" userLabel="LevelGridCollectionView">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1rc-Hk-e7e" userLabel="LevelGridCollectionView">
                                 <rect key="frame" x="0.0" y="89.666666666666686" width="375" height="688.33333333333326"/>
                                 <color key="backgroundColor" red="0.2024929523" green="0.20121890310000001" blue="0.20347523689999999" alpha="1" colorSpace="deviceRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="5" id="l5N-rb-yli">
@@ -128,9 +84,6 @@
                                                             <integer key="value" value="3"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
-                                                    <connections>
-                                                        <action selector="buttonTouched:" destination="3fe-JG-W9x" eventType="touchUpInside" id="0p3-Sx-Cxv"/>
-                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </view>
@@ -141,63 +94,22 @@
                                             <constraint firstAttribute="bottom" secondItem="aU2-A0-L4g" secondAttribute="bottom" id="vNK-kd-Azs"/>
                                         </constraints>
                                         <size key="customSize" width="40" height="40"/>
-                                        <connections>
-                                            <outlet property="buttonView" destination="aU2-A0-L4g" id="8Hj-9f-KYi"/>
-                                        </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="3fe-JG-W9x" id="nqF-8U-8li"/>
-                                    <outlet property="delegate" destination="3fe-JG-W9x" id="w5j-JG-iTL"/>
-                                </connections>
                             </collectionView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NOn-qw-8eZ" userLabel="Banner View" customClass="GADBannerView">
-                                <rect key="frame" x="27.666666666666657" y="728" width="320" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="T1p-RY-rDK"/>
-                                    <constraint firstAttribute="height" constant="50" id="y1E-dC-is1"/>
-                                </constraints>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bsq-h4-77u">
-                                <rect key="frame" x="16" y="44" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="3an-cO-dvD"/>
-                                    <constraint firstAttribute="height" constant="50" id="AtV-nt-ISL"/>
-                                    <constraint firstAttribute="width" secondItem="Bsq-h4-77u" secondAttribute="height" multiplier="1:1" id="LX4-xK-giv"/>
-                                </constraints>
-                                <state key="normal" image="BackIconTab"/>
-                                <connections>
-                                    <segue destination="BV1-FR-VrT" kind="show" id="SqA-eQ-uI5"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Levels" translatesAutoresizingMaskIntoConstraints="NO" id="BYr-Sr-9Gh">
-                                <rect key="frame" x="127.66666666666669" y="46.666666666666657" width="120" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="fzH-CZ-FFN"/>
-                                    <constraint firstAttribute="width" constant="120" id="hGH-Z7-89z"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Levels" translatesAutoresizingMaskIntoConstraints="NO" id="Vbr-SB-Www">
+                                <rect key="frame" x="134" y="40" width="126" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.2024929523" green="0.20121890310000001" blue="0.20347523689999999" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
-                            <constraint firstItem="NOn-qw-8eZ" firstAttribute="centerX" secondItem="eqv-ia-THh" secondAttribute="centerX" id="6go-Go-cZX"/>
-                            <constraint firstItem="Bsq-h4-77u" firstAttribute="leading" secondItem="eqv-ia-THh" secondAttribute="leading" constant="16" id="8lQ-oU-2Po"/>
-                            <constraint firstItem="1rc-Hk-e7e" firstAttribute="top" secondItem="BYr-Sr-9Gh" secondAttribute="bottom" constant="-2" id="9vU-HI-EK4"/>
                             <constraint firstItem="1rc-Hk-e7e" firstAttribute="trailing" secondItem="eqv-ia-THh" secondAttribute="trailing" id="DEO-uc-ch8"/>
-                            <constraint firstItem="BYr-Sr-9Gh" firstAttribute="centerY" secondItem="Bsq-h4-77u" secondAttribute="centerY" id="Hef-vS-mbP"/>
                             <constraint firstItem="1rc-Hk-e7e" firstAttribute="bottom" secondItem="eqv-ia-THh" secondAttribute="bottom" id="LMd-B2-Tq3"/>
                             <constraint firstItem="1rc-Hk-e7e" firstAttribute="leading" secondItem="eqv-ia-THh" secondAttribute="leading" id="P8d-Ru-sOQ"/>
-                            <constraint firstItem="eqv-ia-THh" firstAttribute="bottom" secondItem="NOn-qw-8eZ" secondAttribute="bottom" id="c7B-ri-ejP"/>
-                            <constraint firstItem="BYr-Sr-9Gh" firstAttribute="centerX" secondItem="eqv-ia-THh" secondAttribute="centerX" id="rK7-ZC-PvR"/>
-                            <constraint firstItem="Bsq-h4-77u" firstAttribute="top" secondItem="eqv-ia-THh" secondAttribute="top" id="xw4-rp-xQt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eqv-ia-THh"/>
                     </view>
-                    <connections>
-                        <outlet property="collectionView" destination="1rc-Hk-e7e" id="NM6-B3-v1m"/>
-                        <segue destination="BHN-cl-PeD" kind="showDetail" identifier="MoveToLevelScene" id="yDa-jT-t5s"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Et-wP-H25" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -213,9 +125,6 @@
                         <color key="backgroundColor" red="0.2024929523" green="0.20121890310000001" blue="0.20347523689999999" alpha="1" colorSpace="deviceRGB"/>
                         <viewLayoutGuide key="safeArea" id="88d-4s-vrg"/>
                     </view>
-                    <connections>
-                        <segue destination="3fe-JG-W9x" kind="show" identifier="MoveToLevelSelectScene" id="EFh-Oq-EXd"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="STC-dC-3Cb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -223,13 +132,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BackIconTab" width="25" height="25"/>
         <image name="Levels" width="266" height="100"/>
-        <image name="PlayButton" width="120" height="45"/>
-        <image name="ShopButton" width="120" height="45"/>
-        <image name="Title" width="266" height="200"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="MEt-2T-MNx"/>
-    </inferredMetricsTieBreakers>
 </document>

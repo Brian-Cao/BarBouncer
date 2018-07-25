@@ -25,8 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return Int(num.rounded(.up))
         }
         
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        window?.rootViewController = HomeVC()
         
-
         return true
     }
 

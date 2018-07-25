@@ -10,29 +10,25 @@ import SpriteKit
 import os.log
 
 //var screenSize = CGSize(width: 0, height: 0)
-//let menuSceneBackgroundColor = UIColor(red: 30/255, green: 30/255, blue: 30/255, alpha: 1)
+let standardGreyBackgroundColor = UIColor(red: 50/255, green: 50/255, blue: 50/255, alpha: 1)
 //var levelSelectScenes: Array<LevelSelectScene> = []
 var completedLevels: Array<Int> = []
 
 // Might want to get rid of this later
 
-enum direction
-{
+enum direction {
     case up, down, right, left
 }
 
-enum angle
-{
+enum angle {
     case right, left, straight, flat
 }
 
-enum barSize
-{
+enum barSize {
     case small, medium, large
 }
 
-struct BitMask
-{
+struct BitMask {
     static let bounceBars: UInt32 = 0x1 << 1
     static let ball: UInt32 = 0x1 << 2
     static let endZone: UInt32 = 0x1 << 3
@@ -42,10 +38,10 @@ struct BitMask
     static let breakBar : UInt32 = 0x1 << 7
     
 }
-enum roundDirection{
+
+enum roundDirection {
     case up
     case down
-    
 }
 
 struct Keys {

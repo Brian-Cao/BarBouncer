@@ -23,22 +23,33 @@ class LevelSceneVC: UIViewController, LevelPresentingDelegate {
         let button = UIButton()
         button.setImage(UIImage(named: "BackIconTab"), for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.addTarget(self, action: #selector(backButtonAction), for: .touchUpInside)
+        button.addTarget(self, action: #selector(moveToLevelSelectScene(sender:)), for: .touchUpInside)
         return button
     }()
     
-    @objc func backButtonAction(sender: UIButton!) {
+    @objc func moveToLevelSelectScene(sender: UIButton!){
+        let nextViewController = LevelSelectVC()
+        self.present(nextViewController, animated:false, completion:nil)
+    }
+    
+    var editButton: UIButton = {
+        let button = UIButton()
+        button.backgroundColor = UIColor.red
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(moveToLevelSelectScene(sender:)), for: .touchUpInside)
+        return button
+    }()
+    
+    @objc func editButtonAction(sender: UIButton!) {
         self.performSegue(withIdentifier: "MoveToLevelSelectScene", sender: nil)
     }
     
-    override func viewDidLoad() {
+    override func viewDidLoad(){
         super.viewDidLoad()
-        
         self.view.addSubview(gameView)
         self.view.addSubview(backButton)
-        
+        self.view.addSubview(editButton)
         setUpLayouts()
-        
         presentLevel(levelNumber: selectedLevelNumber)
     }
     
@@ -47,9 +58,14 @@ class LevelSceneVC: UIViewController, LevelPresentingDelegate {
         backButton.widthAnchor.constraint(equalToConstant: 50).isActive = true
         backButton.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 16).isActive = true
         backButton.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor).isActive = true
+        
+        editButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        editButton.widthAnchor.constraint(equalToConstant: 30).isActive = true
+        editButton.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 66).isActive = true
+        editButton.centerYAnchor.constraint(equalTo: backButton.centerYAnchor).isActive = true
     }
     
-    func presentLevel(levelNumber: Int) {
+    func presentLevel(levelNumber: Int){
         let newScene = LevelScene(levelNumber: levelNumber)
         newScene.presentingDelegate = self
         gameView.presentScene(newScene)
