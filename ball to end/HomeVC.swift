@@ -11,20 +11,18 @@ import GoogleMobileAds
 
 class HomeVC: UIViewController, GADBannerViewDelegate{
     
-  //  @IBOutlet weak var bannerView: GADBannerView!
-    
     var barBouncerTitle: UIImageView = {
         let image = UIImageView(image: UIImage(named: "Title"))
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()
     
-    var shopButton: UIButton = {
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.setImage(UIImage(named: "ShopButton"), for: .normal)
-        return button
-    }()
+//    var shopButton: UIButton = {
+//        let button = UIButton()
+//        button.translatesAutoresizingMaskIntoConstraints = false
+//        button.setImage(UIImage(named: "ShopButton"), for: .normal)
+//        return button
+//    }()
     
     var playButton: UIButton = {
         let button = UIButton()
@@ -33,7 +31,6 @@ class HomeVC: UIViewController, GADBannerViewDelegate{
         button.addTarget(self, action: #selector(moveToLevelSelectScene), for: .touchUpInside)
         return button
     }()
-    
     @objc func moveToLevelSelectScene(sender: UIButton!){
         let nextViewController = LevelSelectVC()
         self.present(nextViewController, animated:false, completion:nil)
@@ -51,7 +48,7 @@ class HomeVC: UIViewController, GADBannerViewDelegate{
         super.viewDidLoad()
         self.view.backgroundColor = standardGreyBackgroundColor
         self.view.addSubview(barBouncerTitle)
-        self.view.addSubview(shopButton)
+//        self.view.addSubview(shopButton)
         self.view.addSubview(playButton)
         self.view.addSubview(bannerView)
         
@@ -75,17 +72,20 @@ class HomeVC: UIViewController, GADBannerViewDelegate{
         barBouncerTitle.centerXAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.centerXAnchor).isActive = true
         barBouncerTitle.centerYAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: quarterGapInSafeArea).isActive = true
         
-        shopButton.heightAnchor.constraint(equalToConstant: 45).isActive = true
-        shopButton.widthAnchor.constraint(equalToConstant: 120).isActive = true
-        shopButton.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: leadingAndTrailingGap).isActive = true
-        shopButton.centerYAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: -thirdGapInSafeArea).isActive = true
-        shopButton.clipsToBounds = true
-        shopButton.layer.cornerRadius = 5
+//        shopButton.heightAnchor.constraint(equalToConstant: 45).isActive = true
+//        shopButton.widthAnchor.constraint(equalToConstant: 120).isActive = true
+//        shopButton.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: leadingAndTrailingGap).isActive = true
+//        shopButton.centerYAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: -thirdGapInSafeArea).isActive = true
+//        shopButton.clipsToBounds = true
+//        shopButton.layer.cornerRadius = 5
         
         playButton.heightAnchor.constraint(equalToConstant: 45).isActive = true
         playButton.widthAnchor.constraint(equalToConstant: 120).isActive = true
-        playButton.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: -leadingAndTrailingGap).isActive = true
+//        playButton.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: -leadingAndTrailingGap).isActive = true
         playButton.centerYAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: -thirdGapInSafeArea).isActive = true
+        
+        playButton.centerXAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.centerXAnchor).isActive = true
+        
         playButton.clipsToBounds = true
         playButton.layer.cornerRadius = 5
         

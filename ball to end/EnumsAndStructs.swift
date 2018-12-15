@@ -12,7 +12,7 @@ import os.log
 //var screenSize = CGSize(width: 0, height: 0)
 let standardGreyBackgroundColor = UIColor(red: 50/255, green: 50/255, blue: 50/255, alpha: 1)
 //var levelSelectScenes: Array<LevelSelectScene> = []
-var completedLevels: Array<Int> = []
+var furthestCompletedLevel:Int = 0
 
 // Might want to get rid of this later
 
@@ -45,7 +45,8 @@ enum roundDirection {
 }
 
 struct Keys {
-    static let completedLevels = "CompletedLevels"
+    static let furthestCompletedLevel = "furthestCompletedLevel"
+    static let savedEditedLevels = "savedEditedLevels"
 }
 
 

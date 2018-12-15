@@ -9,12 +9,12 @@
 import UIKit
 import SpriteKit
 
-class GameView: SKView, SKPhysicsContactDelegate {
-
-    override func didMoveToSuperview() {
-        let levelScene = LevelScene(levelNumber: 1)
-        levelScene.scaleMode = .aspectFill
-        presentScene(levelScene)
-    }
-    
-}
+//class GameView: SKView, SKPhysicsContactDelegate {
+//
+//    override func didMoveToSuperview() {
+//        let levelScene = LevelScene(levelNumber: 1)
+//        levelScene.scaleMode = .aspectFill
+//        presentScene(levelScene)
+//    }
+//    
+//}

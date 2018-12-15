@@ -25,6 +25,9 @@ class Polygon: SKSpriteNode{
         return Polygon(x: position.x, y: position.y)
     }
     
+    func printProperties() -> String{
+        return "Polygon(x: \(self.position.x), y: \(self.position.y)), "
+    }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

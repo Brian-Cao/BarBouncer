@@ -16,14 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         // Gets and sets saved data
-        if let savedCompletedLevels: Array<Int> = UserDefaults.standard.object(forKey: Keys.completedLevels) as? Array<Int>{
-            completedLevels = savedCompletedLevels
+        if let furthestSavedCompletedLevel: Int = UserDefaults.standard.object(forKey: Keys.furthestCompletedLevel) as? Int{
+            furthestCompletedLevel = furthestSavedCompletedLevel
         }
         
-        var numberOfPages: Int{
-            let num: Double = Double(levelDataArray.count)/30.0
-            return Int(num.rounded(.up))
-        }
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()

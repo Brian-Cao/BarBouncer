@@ -10,7 +10,7 @@ import UIKit
 
 class LevelSelectVC: UIViewController{
    
-    static var furthestLevelCompleted: Int = 0
+    
     var collectionView: UICollectionView!
     let levelCellID = "LevelCell"
     
@@ -83,12 +83,13 @@ class LevelSelectVC: UIViewController{
         collectionView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
     }
     
-    @objc func moveToLevelSelectScene(sender: UIButton!){
-        let nextViewController = LevelSceneVC()
+    @objc func moveToLevelScene(sender: UIButton!){
+        let touchedLevelButtonNumber = Int((sender.titleLabel?.text)!)!
+        //if(touchedLevelButtonNumber <= furthestCompletedLevel + 1){
+            let nextViewController = LevelSceneVC(levelNumber: touchedLevelButtonNumber)
+            self.present(nextViewController, animated:false, completion:nil)
+       // }
         
-        let selectedLevel = Int((sender.titleLabel?.text)!)
-        nextViewController.selectedLevelNumber = selectedLevel!
-        self.present(nextViewController, animated:false, completion:nil)
     }
     
 }
@@ -108,7 +109,7 @@ extension LevelSelectVC: UICollectionViewDelegate, UICollectionViewDataSource {
         let cell: LevelCollectionCell! = collectionView.dequeueReusableCell(withReuseIdentifier: "LevelCell", for: indexPath) as? LevelCollectionCell
         cell.buttonView.setTitle("\(cellNumber)", for: .normal)
         cell.tag = cellNumber
-        if(cellNumber <= LevelSelectVC.furthestLevelCompleted){
+        if(cellNumber <= furthestCompletedLevel){
             cell.setToComplete()
         }
         return cell
@@ -129,7 +130,7 @@ class LevelCollectionCell: UICollectionViewCell {
         self.buttonView.layer.cornerRadius = 5
         self.buttonView.titleLabel?.font = UIFont(name: "GillSans-Bold", size: 21)
         self.buttonView.isUserInteractionEnabled = true
-        self.buttonView.addTarget(LevelSelectVC(), action: #selector(LevelSelectVC.moveToLevelSelectScene(sender:)), for: .touchUpInside)
+        self.buttonView.addTarget(LevelSelectVC(), action: #selector(LevelSelectVC.moveToLevelScene(sender:)), for: .touchUpInside)
         self.addSubview(buttonView)
         setUpLayouts()
     }
