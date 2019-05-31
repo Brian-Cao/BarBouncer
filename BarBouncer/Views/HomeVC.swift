@@ -9,6 +9,7 @@
 import SpriteKit
 import GoogleMobileAds
 
+
 class HomeVC: UIViewController, GADBannerViewDelegate{
     
     var barBouncerTitle: UIImageView = {
@@ -36,12 +37,12 @@ class HomeVC: UIViewController, GADBannerViewDelegate{
         self.present(nextViewController, animated:false, completion:nil)
     }
     
-    var bannerView: GADBannerView = {
-        let bannerView = GADBannerView(adSize: kGADAdSizeBanner)
-        bannerView.translatesAutoresizingMaskIntoConstraints = false
-        bannerView.adUnitID = "ca-app-pub-5829183895281971/3952983924"
-        return bannerView
-    }()
+//    var bannerView: GADBannerView = {
+//        let bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+//        bannerView.translatesAutoresizingMaskIntoConstraints = false
+//        bannerView.adUnitID = "ca-app-pub-5829183895281971/3952983924"
+//        return bannerView
+//    }()
     
     override func viewDidLoad(){
         
@@ -50,15 +51,15 @@ class HomeVC: UIViewController, GADBannerViewDelegate{
         self.view.addSubview(barBouncerTitle)
 //        self.view.addSubview(shopButton)
         self.view.addSubview(playButton)
-        self.view.addSubview(bannerView)
+      //  self.view.addSubview(bannerView)
         
         setUpLayouts()
       
-        let request = GADRequest()
-        request.testDevices = [kGADSimulatorID]
-        bannerView.rootViewController = self
-        bannerView.delegate = self
-        bannerView.load(request)
+//        let request = GADRequest()
+//        request.testDevices = [kGADSimulatorID]
+//        bannerView.rootViewController = self
+//        bannerView.delegate = self
+//        bannerView.load(request)
         
     }
     
@@ -89,10 +90,10 @@ class HomeVC: UIViewController, GADBannerViewDelegate{
         playButton.clipsToBounds = true
         playButton.layer.cornerRadius = 5
         
-        bannerView.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        bannerView.widthAnchor.constraint(equalToConstant: 320).isActive = true
-        bannerView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
-        bannerView.centerXAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.centerXAnchor).isActive = true
+//        bannerView.heightAnchor.constraint(equalToConstant: 50).isActive = true
+//        bannerView.widthAnchor.constraint(equalToConstant: 320).isActive = true
+//        bannerView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+//        bannerView.centerXAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.centerXAnchor).isActive = true
         
     }
     

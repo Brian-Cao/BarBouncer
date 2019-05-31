@@ -9,7 +9,7 @@
 import UIKit
 import SpriteKit
 
-class LevelSceneVC: UIViewController, LevelPresentingDelegate {
+class LevelSceneVC: UIViewController/*, LevelPresentingDelegate */{
     
     
     var gameData: GameData
@@ -21,7 +21,7 @@ class LevelSceneVC: UIViewController, LevelPresentingDelegate {
     }
     
     convenience init(levelNumber: Int){
-        self.init(gameData: levelDataArray[levelNumber]!)
+        self.init(gameData: levelDataArray[levelNumber-1])
         self.levelNumber = levelNumber
     }
     
@@ -63,8 +63,8 @@ class LevelSceneVC: UIViewController, LevelPresentingDelegate {
         return button
     }()
     @objc func moveToLevelEditor(sender: UIButton!) {
-        let nextViewController = LevelEditorVC(levelNumber: levelNumber!)
-        self.present(nextViewController, animated:false, completion:nil)
+//        let nextViewController = LevelEditorVC(levelNumber: levelNumber!)
+//        self.present(nextViewController, animated:false, completion:nil)
     }
     
     override func viewDidLoad(){
@@ -101,16 +101,16 @@ class LevelSceneVC: UIViewController, LevelPresentingDelegate {
     }
     
     func presentLevel(gameData: GameData) {
-        let newScene = LevelScene(gameData: gameData)
-        newScene.levelPresentingDelegate = self
-        gameView.presentScene(newScene)
+//        let newScene = LevelScene(gameData: gameData)
+//        newScene.levelPresentingDelegate = self
+//        gameView.presentScene(newScene)
     }
     
     func presentLevelWith(levelNumber: Int) {
-        let newScene = LevelScene(levelNumber: levelNumber)
-        self.levelNumber = levelNumber
-        newScene.levelPresentingDelegate = self
-        gameView.presentScene(newScene)
+//        let newScene = LevelScene(levelNumber: levelNumber)
+//        self.levelNumber = levelNumber
+//        newScene.levelPresentingDelegate = self
+//        gameView.presentScene(newScene)
     }
     
     required init?(coder aDecoder: NSCoder) {

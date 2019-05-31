@@ -28,14 +28,18 @@ enum barSize {
     case small, medium, large
 }
 
+struct BarSize {
+    static let small: CGSize = CGSize(width: 5, height: 100)
+    static let medium: CGSize = CGSize(width: 5, height: 120)
+    static let large: CGSize = CGSize(width: 5, height: 140)
+}
+
 struct BitMask {
-    static let bounceBars: UInt32 = 0x1 << 1
+    static let bounceBar: UInt32 = 0x1 << 1
     static let ball: UInt32 = 0x1 << 2
     static let endZone: UInt32 = 0x1 << 3
-    static let bars: UInt32 = 0x1 << 4
-    static let polygon: UInt32 = 0x1 << 5
-    static let border: UInt32 = 0x1 << 6
-    static let breakBar : UInt32 = 0x1 << 7
+    static let solidBar: UInt32 = 0x1 << 4
+    static let breakBar : UInt32 = 0x1 << 5
     
 }
 
@@ -47,6 +51,24 @@ enum roundDirection {
 struct Keys {
     static let furthestCompletedLevel = "furthestCompletedLevel"
     static let savedEditedLevels = "savedEditedLevels"
+}
+
+class GameData {
+    
+    var ball: Ball
+    var endZone: EndZone
+    var bounceBars: [BounceBar]
+    var solidBars: [SolidBar]
+    var breakBars: [BreakBar]
+    
+    init(ball: Ball, endZone: EndZone, bounceBars:[BounceBar] = [], solidBars:[SolidBar] = [], breakBars:[BreakBar] = []) {
+        self.ball = ball
+        self.endZone = endZone
+        self.bounceBars = bounceBars
+        self.solidBars = solidBars
+        self.breakBars = breakBars
+    }
+
 }
 
 

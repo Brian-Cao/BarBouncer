@@ -16,9 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         // Gets and sets saved data
-        if let furthestSavedCompletedLevel: Int = UserDefaults.standard.object(forKey: Keys.furthestCompletedLevel) as? Int{
-            furthestCompletedLevel = furthestSavedCompletedLevel
-        }
+//        if let furthestSavedCompletedLevel: Int = UserDefaults.standard.object(forKey: Keys.furthestCompletedLevel) as? Int{
+//            furthestCompletedLevel = furthestSavedCompletedLevel
+//        }
         
         
         window = UIWindow(frame: UIScreen.main.bounds)

@@ -7,35 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C4FF09BE69A1B6CA2B2E73F /* Pods_BarBouncerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 691CB8360DD2DD066A0AD128 /* Pods_BarBouncerUITests.framework */; };
+		48FA922F5214EC67C651379E /* Pods_BarBouncer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D4949BA4574E2F30C85DC8 /* Pods_BarBouncer.framework */; };
 		A7034A211EB16D8500646900 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7034A201EB16D8500646900 /* AppDelegate.swift */; };
 		A7034A251EB16D8500646900 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = A7034A241EB16D8500646900 /* Actions.sks */; };
 		A7034A291EB16D8500646900 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7034A281EB16D8500646900 /* HomeVC.swift */; };
 		A7034A2E1EB16D8500646900 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7034A2D1EB16D8500646900 /* Assets.xcassets */; };
 		A7034A311EB16D8500646900 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7034A2F1EB16D8500646900 /* LaunchScreen.storyboard */; };
 		A7034A471EB16D8500646900 /* BarBouncerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7034A461EB16D8500646900 /* BarBouncerUITests.swift */; };
-		A7034A571EB16FD500646900 /* BallClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7034A561EB16FD500646900 /* BallClass.swift */; };
-		A708DABB1F191E0000487BB3 /* BarClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A708DABA1F191E0000487BB3 /* BarClass.swift */; };
-		A7131B781FFDCF0100CCAE13 /* BarFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7131B771FFDCF0100CCAE13 /* BarFactory.swift */; };
-		A7131B7A1FFF35A300CCAE13 /* SwitchBarClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7131B791FFF35A300CCAE13 /* SwitchBarClass.swift */; };
-		A71963D01EBC022500B079AA /* SolidBarClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71963CF1EBC022500B079AA /* SolidBarClass.swift */; };
-		A737A3021F04B49600B9AAB9 /* BreakBarClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A737A3011F04B49600B9AAB9 /* BreakBarClass.swift */; };
 		A73B67E11F8F181C00C788B6 /* EnumsAndStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73B67E01F8F181C00C788B6 /* EnumsAndStructs.swift */; };
 		A7537A1721AFBB37004B840A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75F0C3D208D8FF50004995D /* QuartzCore.framework */; };
-		A7537A1B21AFBBF5004B840A /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7537A1921AFBBD1004B840A /* GoogleMobileAds.framework */; };
 		A768930B210A485600767DF7 /* LevelEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768930A210A485600767DF7 /* LevelEditor.swift */; };
 		A768930E210A489F00767DF7 /* LevelEditorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768930D210A489F00767DF7 /* LevelEditorVC.swift */; };
 		A76F5E222095ACFF009CAE45 /* LevelSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F5E212095ACFF009CAE45 /* LevelSelectVC.swift */; };
-		A77933441F224A3D00591125 /* HighLightBarsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77933431F224A3D00591125 /* HighLightBarsClass.swift */; };
-		A7974D491EEB59DF0079796A /* LevelDataArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7974D481EEB59DF0079796A /* LevelDataArray.swift */; };
 		A7A6E28420BA51B000A9CD70 /* LevelSceneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A6E28320BA51B000A9CD70 /* LevelSceneVC.swift */; };
-		A7A9E6E51EB190DF005FBEB0 /* BounceBarClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A9E6E41EB190DF005FBEB0 /* BounceBarClass.swift */; };
-		A7DA77BB1F141D0A00BB640F /* LevelMakerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DA77BA1F141D0A00BB640F /* LevelMakerScene.swift */; };
-		A7E928E01FB7C66B005AC736 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7E928DF1FB7C66B005AC736 /* GoogleService-Info.plist */; };
-		A7EC5E291EE9E2E800FCC555 /* LevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EC5E281EE9E2E800FCC555 /* LevelScene.swift */; };
-		A7EC5E2B1EEA109F00FCC555 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EC5E2A1EEA109F00FCC555 /* GameData.swift */; };
-		A7EF50611EB3F92C00B4B927 /* EndZoneClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EF50601EB3F92C00B4B927 /* EndZoneClass.swift */; };
+		A7A7CF18228BE16400CF4F8A /* GameObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7CF17228BE16400CF4F8A /* GameObjects.swift */; };
+		A7E9E076228BE07600DFF5DC /* LevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E9E075228BE07600DFF5DC /* LevelScene.swift */; };
+		A7E9E078228BE0A300DFF5DC /* LevelMakerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E9E077228BE0A300DFF5DC /* LevelMakerScene.swift */; };
+		A7E9E07C228BE0FC00DFF5DC /* LevelDataArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E9E07B228BE0FC00DFF5DC /* LevelDataArray.swift */; };
 		A7FDABC41FDCF15D006FD335 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FDABC31FDCF15D006FD335 /* Button.swift */; };
-		A7FFBFDD1EBE62E100F42797 /* PolygonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FFBFDC1EBE62E100F42797 /* PolygonClass.swift */; };
+		D699E8F3A3CD379C335D9347 /* Pods_BarBouncerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0606B34604DEC1D99F6725 /* Pods_BarBouncerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10991CC7B9487FECD335A5A6 /* Pods-BarBouncer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarBouncer.debug.xcconfig"; path = "Target Support Files/Pods-BarBouncer/Pods-BarBouncer.debug.xcconfig"; sourceTree = "<group>"; };
+		1874ACEBA5CAF8A35FFE6C13 /* Pods-BarBouncerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarBouncerUITests.release.xcconfig"; path = "Target Support Files/Pods-BarBouncerUITests/Pods-BarBouncerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4A0606B34604DEC1D99F6725 /* Pods_BarBouncerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarBouncerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63D4949BA4574E2F30C85DC8 /* Pods_BarBouncer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarBouncer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		691CB8360DD2DD066A0AD128 /* Pods_BarBouncerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarBouncerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89E06267C54F32EB15A09DCB /* Pods-BarBouncerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarBouncerTests.release.xcconfig"; path = "Target Support Files/Pods-BarBouncerTests/Pods-BarBouncerTests.release.xcconfig"; sourceTree = "<group>"; };
+		9F911F6BF1F45E08E0B08F01 /* Pods-BarBouncerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarBouncerUITests.debug.xcconfig"; path = "Target Support Files/Pods-BarBouncerUITests/Pods-BarBouncerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A7034A1D1EB16D8500646900 /* BarBouncer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarBouncer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7034A201EB16D8500646900 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7034A241EB16D8500646900 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -68,29 +66,20 @@
 		A7034A421EB16D8500646900 /* BarBouncerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarBouncerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7034A461EB16D8500646900 /* BarBouncerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarBouncerUITests.swift; sourceTree = "<group>"; };
 		A7034A481EB16D8500646900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7034A561EB16FD500646900 /* BallClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallClass.swift; sourceTree = "<group>"; };
-		A708DABA1F191E0000487BB3 /* BarClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarClass.swift; sourceTree = "<group>"; };
-		A7131B771FFDCF0100CCAE13 /* BarFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarFactory.swift; sourceTree = "<group>"; };
-		A7131B791FFF35A300CCAE13 /* SwitchBarClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchBarClass.swift; sourceTree = "<group>"; };
-		A71963CF1EBC022500B079AA /* SolidBarClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolidBarClass.swift; sourceTree = "<group>"; };
-		A737A3011F04B49600B9AAB9 /* BreakBarClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreakBarClass.swift; sourceTree = "<group>"; };
+		A72FEF562296D78B007AB808 /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A73B67E01F8F181C00C788B6 /* EnumsAndStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumsAndStructs.swift; sourceTree = "<group>"; };
-		A7537A1921AFBBD1004B840A /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "../../../../Downloads/GoogleMobileAdsSdkiOS-7.36.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
 		A75F0C3D208D8FF50004995D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A768930A210A485600767DF7 /* LevelEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelEditor.swift; sourceTree = "<group>"; };
 		A768930D210A489F00767DF7 /* LevelEditorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelEditorVC.swift; sourceTree = "<group>"; };
 		A76F5E212095ACFF009CAE45 /* LevelSelectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSelectVC.swift; sourceTree = "<group>"; };
-		A77933431F224A3D00591125 /* HighLightBarsClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighLightBarsClass.swift; sourceTree = "<group>"; };
-		A7974D481EEB59DF0079796A /* LevelDataArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelDataArray.swift; sourceTree = "<group>"; };
 		A7A6E28320BA51B000A9CD70 /* LevelSceneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSceneVC.swift; sourceTree = "<group>"; };
-		A7A9E6E41EB190DF005FBEB0 /* BounceBarClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BounceBarClass.swift; sourceTree = "<group>"; };
-		A7DA77BA1F141D0A00BB640F /* LevelMakerScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelMakerScene.swift; path = ../LevelMakerScene.swift; sourceTree = "<group>"; };
-		A7E928DF1FB7C66B005AC736 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		A7EC5E281EE9E2E800FCC555 /* LevelScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelScene.swift; sourceTree = "<group>"; };
-		A7EC5E2A1EEA109F00FCC555 /* GameData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
-		A7EF50601EB3F92C00B4B927 /* EndZoneClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndZoneClass.swift; sourceTree = "<group>"; };
+		A7A7CF17228BE16400CF4F8A /* GameObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObjects.swift; sourceTree = "<group>"; };
+		A7E9E075228BE07600DFF5DC /* LevelScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelScene.swift; sourceTree = "<group>"; };
+		A7E9E077228BE0A300DFF5DC /* LevelMakerScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelMakerScene.swift; sourceTree = "<group>"; };
+		A7E9E07B228BE0FC00DFF5DC /* LevelDataArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelDataArray.swift; sourceTree = "<group>"; };
 		A7FDABC31FDCF15D006FD335 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
-		A7FFBFDC1EBE62E100F42797 /* PolygonClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PolygonClass.swift; path = ../PolygonClass.swift; sourceTree = "<group>"; };
+		BDFBE36ED57798A0B137A8AD /* Pods-BarBouncerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarBouncerTests.debug.xcconfig"; path = "Target Support Files/Pods-BarBouncerTests/Pods-BarBouncerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C7432E477066DB7931AE9D7B /* Pods-BarBouncer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarBouncer.release.xcconfig"; path = "Target Support Files/Pods-BarBouncer/Pods-BarBouncer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7537A1B21AFBBF5004B840A /* GoogleMobileAds.framework in Frameworks */,
 				A7537A1721AFBB37004B840A /* QuartzCore.framework in Frameworks */,
+				48FA922F5214EC67C651379E /* Pods_BarBouncer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D699E8F3A3CD379C335D9347 /* Pods_BarBouncerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C4FF09BE69A1B6CA2B2E73F /* Pods_BarBouncerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +120,7 @@
 				A7034A451EB16D8500646900 /* BarBounce UITests */,
 				A7034A1E1EB16D8500646900 /* Products */,
 				A75F0C3C208D8FF40004995D /* Frameworks */,
+				AECEA6FAFD221991C2DD6E1C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,13 +137,12 @@
 		A7034A1F1EB16D8500646900 /* BarBouncer */ = {
 			isa = PBXGroup;
 			children = (
-				A7E928DF1FB7C66B005AC736 /* GoogleService-Info.plist */,
-				A7537A1921AFBBD1004B840A /* GoogleMobileAds.framework */,
-				A708DABC1F192C1200487BB3 /* Scenes */,
-				A7974D461EEA3F910079796A /* GameObjectClasses */,
+				A72FA91A228144CD0027E2CE /* Views */,
+				A72FA91C2281BB4B0027E2CE /* GameObjects */,
+				A7FDABC31FDCF15D006FD335 /* Button.swift */,
+				A7E9E07B228BE0FC00DFF5DC /* LevelDataArray.swift */,
 				A73B67E01F8F181C00C788B6 /* EnumsAndStructs.swift */,
-				A7974D481EEB59DF0079796A /* LevelDataArray.swift */,
-				A7034A551EB16E8100646900 /* other */,
+				A72FA91B2281BABD0027E2CE /* other */,
 			);
 			path = BarBouncer;
 			sourceTree = "<group>";
@@ -175,7 +166,21 @@
 			path = BarBouncerUITests;
 			sourceTree = "<group>";
 		};
-		A7034A551EB16E8100646900 /* other */ = {
+		A72FA91A228144CD0027E2CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A7034A281EB16D8500646900 /* HomeVC.swift */,
+				A76F5E212095ACFF009CAE45 /* LevelSelectVC.swift */,
+				A7A6E28320BA51B000A9CD70 /* LevelSceneVC.swift */,
+				A7E9E075228BE07600DFF5DC /* LevelScene.swift */,
+				A768930D210A489F00767DF7 /* LevelEditorVC.swift */,
+				A768930A210A485600767DF7 /* LevelEditor.swift */,
+				A7E9E077228BE0A300DFF5DC /* LevelMakerScene.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A72FA91B2281BABD0027E2CE /* other */ = {
 			isa = PBXGroup;
 			children = (
 				A7034A201EB16D8500646900 /* AppDelegate.swift */,
@@ -183,64 +188,40 @@
 				A7034A2F1EB16D8500646900 /* LaunchScreen.storyboard */,
 				A7034A321EB16D8500646900 /* Info.plist */,
 			);
-			name = other;
+			path = other;
 			sourceTree = "<group>";
 		};
-		A708DABC1F192C1200487BB3 /* Scenes */ = {
+		A72FA91C2281BB4B0027E2CE /* GameObjects */ = {
 			isa = PBXGroup;
 			children = (
-				A7EAE16920FE4CEB007B5482 /* ViewControllersScenes */,
-				A7EC5E2A1EEA109F00FCC555 /* GameData.swift */,
-				A7FDABC31FDCF15D006FD335 /* Button.swift */,
-				A7DA77BA1F141D0A00BB640F /* LevelMakerScene.swift */,
+				A7A7CF17228BE16400CF4F8A /* GameObjects.swift */,
 			);
-			name = Scenes;
-			sourceTree = "<group>";
-		};
-		A74E5BF01EE7BC6C00122BCA /* Bar Classes */ = {
-			isa = PBXGroup;
-			children = (
-				A708DABA1F191E0000487BB3 /* BarClass.swift */,
-				A7A9E6E41EB190DF005FBEB0 /* BounceBarClass.swift */,
-				A71963CF1EBC022500B079AA /* SolidBarClass.swift */,
-				A737A3011F04B49600B9AAB9 /* BreakBarClass.swift */,
-				A7131B771FFDCF0100CCAE13 /* BarFactory.swift */,
-				A7131B791FFF35A300CCAE13 /* SwitchBarClass.swift */,
-			);
-			name = "Bar Classes";
+			path = GameObjects;
 			sourceTree = "<group>";
 		};
 		A75F0C3C208D8FF40004995D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A72FEF562296D78B007AB808 /* GoogleUtilities.framework */,
 				A75F0C3D208D8FF50004995D /* QuartzCore.framework */,
+				63D4949BA4574E2F30C85DC8 /* Pods_BarBouncer.framework */,
+				4A0606B34604DEC1D99F6725 /* Pods_BarBouncerTests.framework */,
+				691CB8360DD2DD066A0AD128 /* Pods_BarBouncerUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A7974D461EEA3F910079796A /* GameObjectClasses */ = {
+		AECEA6FAFD221991C2DD6E1C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A77933431F224A3D00591125 /* HighLightBarsClass.swift */,
-				A7034A561EB16FD500646900 /* BallClass.swift */,
-				A7FFBFDC1EBE62E100F42797 /* PolygonClass.swift */,
-				A7EF50601EB3F92C00B4B927 /* EndZoneClass.swift */,
-				A74E5BF01EE7BC6C00122BCA /* Bar Classes */,
+				10991CC7B9487FECD335A5A6 /* Pods-BarBouncer.debug.xcconfig */,
+				C7432E477066DB7931AE9D7B /* Pods-BarBouncer.release.xcconfig */,
+				BDFBE36ED57798A0B137A8AD /* Pods-BarBouncerTests.debug.xcconfig */,
+				89E06267C54F32EB15A09DCB /* Pods-BarBouncerTests.release.xcconfig */,
+				9F911F6BF1F45E08E0B08F01 /* Pods-BarBouncerUITests.debug.xcconfig */,
+				1874ACEBA5CAF8A35FFE6C13 /* Pods-BarBouncerUITests.release.xcconfig */,
 			);
-			name = GameObjectClasses;
-			sourceTree = "<group>";
-		};
-		A7EAE16920FE4CEB007B5482 /* ViewControllersScenes */ = {
-			isa = PBXGroup;
-			children = (
-				A7034A281EB16D8500646900 /* HomeVC.swift */,
-				A76F5E212095ACFF009CAE45 /* LevelSelectVC.swift */,
-				A7A6E28320BA51B000A9CD70 /* LevelSceneVC.swift */,
-				A7EC5E281EE9E2E800FCC555 /* LevelScene.swift */,
-				A768930D210A489F00767DF7 /* LevelEditorVC.swift */,
-				A768930A210A485600767DF7 /* LevelEditor.swift */,
-			);
-			name = ViewControllersScenes;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +231,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7034A4B1EB16D8500646900 /* Build configuration list for PBXNativeTarget "BarBouncer" */;
 			buildPhases = (
+				58E447CC5DCC694E0435C912 /* [CP] Check Pods Manifest.lock */,
 				A7034A191EB16D8400646900 /* Sources */,
 				A7034A1A1EB16D8400646900 /* Frameworks */,
 				A7034A1B1EB16D8400646900 /* Resources */,
+				E8966DB776393AEDA65DBAD6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -267,6 +250,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7034A4E1EB16D8500646900 /* Build configuration list for PBXNativeTarget "BarBouncerTests" */;
 			buildPhases = (
+				9C9F40BEDE2A4C852EE8CFFB /* [CP] Check Pods Manifest.lock */,
 				A7034A331EB16D8500646900 /* Sources */,
 				A7034A341EB16D8500646900 /* Frameworks */,
 				A7034A351EB16D8500646900 /* Resources */,
@@ -285,6 +269,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7034A511EB16D8500646900 /* Build configuration list for PBXNativeTarget "BarBouncerUITests" */;
 			buildPhases = (
+				872B30115A1868607E6F985D /* [CP] Check Pods Manifest.lock */,
 				A7034A3E1EB16D8500646900 /* Sources */,
 				A7034A3F1EB16D8500646900 /* Frameworks */,
 				A7034A401EB16D8500646900 /* Resources */,
@@ -336,6 +321,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -359,7 +345,6 @@
 				A7034A2E1EB16D8500646900 /* Assets.xcassets in Resources */,
 				A7034A311EB16D8500646900 /* LaunchScreen.storyboard in Resources */,
 				A7034A251EB16D8500646900 /* Actions.sks in Resources */,
-				A7E928E01FB7C66B005AC736 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,33 +364,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		58E447CC5DCC694E0435C912 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BarBouncer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		872B30115A1868607E6F985D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BarBouncerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C9F40BEDE2A4C852EE8CFFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BarBouncerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8966DB776393AEDA65DBAD6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BarBouncer/Pods-BarBouncer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BarBouncer/Pods-BarBouncer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A7034A191EB16D8400646900 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7EF50611EB3F92C00B4B927 /* EndZoneClass.swift in Sources */,
-				A7131B7A1FFF35A300CCAE13 /* SwitchBarClass.swift in Sources */,
+				A7E9E07C228BE0FC00DFF5DC /* LevelDataArray.swift in Sources */,
+				A7A7CF18228BE16400CF4F8A /* GameObjects.swift in Sources */,
 				A768930E210A489F00767DF7 /* LevelEditorVC.swift in Sources */,
 				A7034A291EB16D8500646900 /* HomeVC.swift in Sources */,
 				A73B67E11F8F181C00C788B6 /* EnumsAndStructs.swift in Sources */,
-				A7EC5E291EE9E2E800FCC555 /* LevelScene.swift in Sources */,
-				A71963D01EBC022500B079AA /* SolidBarClass.swift in Sources */,
-				A7FFBFDD1EBE62E100F42797 /* PolygonClass.swift in Sources */,
+				A7E9E078228BE0A300DFF5DC /* LevelMakerScene.swift in Sources */,
 				A7034A211EB16D8500646900 /* AppDelegate.swift in Sources */,
-				A7974D491EEB59DF0079796A /* LevelDataArray.swift in Sources */,
-				A77933441F224A3D00591125 /* HighLightBarsClass.swift in Sources */,
 				A76F5E222095ACFF009CAE45 /* LevelSelectVC.swift in Sources */,
-				A7034A571EB16FD500646900 /* BallClass.swift in Sources */,
 				A768930B210A485600767DF7 /* LevelEditor.swift in Sources */,
-				A7131B781FFDCF0100CCAE13 /* BarFactory.swift in Sources */,
-				A7DA77BB1F141D0A00BB640F /* LevelMakerScene.swift in Sources */,
+				A7E9E076228BE07600DFF5DC /* LevelScene.swift in Sources */,
 				A7A6E28420BA51B000A9CD70 /* LevelSceneVC.swift in Sources */,
 				A7FDABC41FDCF15D006FD335 /* Button.swift in Sources */,
-				A708DABB1F191E0000487BB3 /* BarClass.swift in Sources */,
-				A737A3021F04B49600B9AAB9 /* BreakBarClass.swift in Sources */,
-				A7EC5E2B1EEA109F00FCC555 /* GameData.swift in Sources */,
-				A7A9E6E51EB190DF005FBEB0 /* BounceBarClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,8 +632,10 @@
 		};
 		A7034A4C1EB16D8500646900 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10991CC7B9487FECD335A5A6 /* Pods-BarBouncer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -574,7 +644,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ball\\ to\\ end",
 				);
-				INFOPLIST_FILE = BarBouncer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BarBouncer/other/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bdc.barbouncer;
@@ -587,8 +657,10 @@
 		};
 		A7034A4D1EB16D8500646900 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7432E477066DB7931AE9D7B /* Pods-BarBouncer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -597,7 +669,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ball\\ to\\ end",
 				);
-				INFOPLIST_FILE = BarBouncer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BarBouncer/other/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bdc.barbouncer;
@@ -610,6 +682,7 @@
 		};
 		A7034A4F1EB16D8500646900 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDFBE36ED57798A0B137A8AD /* Pods-BarBouncerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -625,6 +698,7 @@
 		};
 		A7034A501EB16D8500646900 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89E06267C54F32EB15A09DCB /* Pods-BarBouncerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -640,6 +714,7 @@
 		};
 		A7034A521EB16D8500646900 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F911F6BF1F45E08E0B08F01 /* Pods-BarBouncerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = L4C8QAYK3H;
@@ -654,6 +729,7 @@
 		};
 		A7034A531EB16D8500646900 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1874ACEBA5CAF8A35FFE6C13 /* Pods-BarBouncerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = L4C8QAYK3H;
