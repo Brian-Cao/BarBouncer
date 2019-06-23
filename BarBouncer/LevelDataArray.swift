@@ -9,5 +9,12 @@
 import Foundation
 
 var levelDataArray: [GameData] = [
-    GameData(ball: Ball(x: 0, y: 0, movedirection: .up), endZone: EndZone(x: 0, y: 100), bounceBars: [BounceBar(x: 100, y: 100, angle: .right)])
+    GameData(ball: Ball(x: 0, y: 0, moveDirection: .up), endZone: EndZone(x: 0, y: 100), bounceBars: [BounceBar(x: 100, y: 100, angle: .right)]),
+    GameData(ball: Ball(x: 0, y: 0, moveDirection: .up), endZone: EndZone(x: 0, y: 100), bounceBars: [BounceBar(x: 100, y: 100, angle: .right)]),
+    GameData(ball: Ball(x: 0, y: 0, moveDirection: .up), endZone: EndZone(x: 0, y: 100), bounceBars: [BounceBar(x: 100, y: 100, angle: .right)]),
+    GameData(ball: Ball(x: 0, y: 0, moveDirection: .up), endZone: EndZone(x: 0, y: 100), bounceBars: [BounceBar(x: 100, y: 100, angle: .right)]),
+    GameData(ball: Ball(x: 0, y: 0, moveDirection: .up), endZone: EndZone(x: 0, y: 100), bounceBars: [BounceBar(x: 100, y: 100, angle: .right)]),
+    GameData(ball: Ball(x: 0, y: 0, moveDirection: .up), endZone: EndZone(x: 0, y: 100), bounceBars: [BounceBar(x: 100, y: 100, angle: .right)]),
+    GameData(ball: Ball(x: 0, y: 0, moveDirection: .up), endZone: EndZone(x: 0, y: 100), bounceBars: [BounceBar(x: 100, y: 100, angle: .right)]),
+    
 ]
