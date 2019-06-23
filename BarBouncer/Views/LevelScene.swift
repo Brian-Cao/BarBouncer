@@ -19,22 +19,34 @@ class LevelScene: SKScene {
     var levelPresentingDelegate: LevelSceneVC!
     
     var gameData: GameData
-    var ball: Ball
-    var endZone: EndZone
-    var bounceBars: [BounceBar]
-    var solidBars: [SolidBar]
-    var breakBars: [BreakBar]
+    
+    var ball: Ball {
+        get{return gameData.ball}
+    }
+    var endZone: EndZone {
+        get{return gameData.endZone}
+    }
+    var bounceBars: [BounceBar] {
+        get{return gameData.bounceBars}
+    }
+    var solidBars: [SolidBar] {
+        get{return gameData.solidBars}
+    }
+    var breakBars: [BreakBar] {
+        get{return gameData.breakBars}
+    }
+    
     var levelNumber: Int?
     var playerHasMovedTheBall = false
     
     init(gameData: GameData){
-        self.gameData = gameData
-        self.ball = gameData.ball
-        self.endZone = gameData.endZone
-        
-        self.bounceBars = gameData.bounceBars
-        self.solidBars = gameData.solidBars
-        self.breakBars = gameData.breakBars
+        self.gameData = gameData.clone()
+//        self.ball = gameData.ball
+//        self.endZone = gameData.endZone
+//
+//        self.bounceBars = gameData.bounceBars
+//        self.solidBars = gameData.solidBars
+//        self.breakBars = gameData.breakBars
         
         super.init(size: UIScreen.main.bounds.size)
         self.anchorPoint = CGPoint(x: 0.5, y: 0.5)

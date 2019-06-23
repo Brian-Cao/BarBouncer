@@ -53,7 +53,7 @@ struct Keys {
     static let savedEditedLevels = "savedEditedLevels"
 }
 
-class GameData {
+struct GameData {
     
     var ball: Ball
     var endZone: EndZone
@@ -67,6 +67,26 @@ class GameData {
         self.bounceBars = bounceBars
         self.solidBars = solidBars
         self.breakBars = breakBars
+    }
+    
+    func clone() -> GameData {
+        let bounceBarClones: [BounceBar] = {
+            var array:[BounceBar] = []
+            for bar in bounceBars{array.append(bar.clone())}
+            return array
+        }()
+        let solidBarClones: [SolidBar] = {
+            var array:[SolidBar] = []
+            for bar in solidBars{array.append(bar.clone())}
+            return array
+        }()
+        let breakBarClones: [BreakBar] = {
+            var array:[BreakBar] = []
+            for bar in breakBars{array.append(bar.clone())}
+            return array
+        }()
+        
+        return GameData(ball: ball.clone(), endZone: endZone.clone(), bounceBars: bounceBarClones, solidBars: solidBarClones, breakBars: breakBarClones)
     }
 
 }
