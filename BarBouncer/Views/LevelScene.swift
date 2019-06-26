@@ -14,39 +14,33 @@ protocol LevelPresentingDelegate{
     func presentLevelWith(levelNumber: Int)
 }
 
+protocol EditorPresentingDelegate {
+    func runLevel(gameData: GameData)
+    func runLevel(levelNumber: Int)
+    func presentEditorWith(levelNumber: Int)
+    func presentEditor(gameData: GameData)
+    
+}
+
 class LevelScene: SKScene {
     
-    var levelPresentingDelegate: LevelSceneVC!
-    
+    var levelPresentingDelegate: LevelSceneVC?
+    var editorPresentingDelegate: EditorPresentingDelegate?
+    var playerIsEditing = false
     var gameData: GameData
     
-    var ball: Ball {
-        get{return gameData.ball}
-    }
-    var endZone: EndZone {
-        get{return gameData.endZone}
-    }
-    var bounceBars: [BounceBar] {
-        get{return gameData.bounceBars}
-    }
-    var solidBars: [SolidBar] {
-        get{return gameData.solidBars}
-    }
-    var breakBars: [BreakBar] {
-        get{return gameData.breakBars}
-    }
+    var ball: Ball {get{return gameData.ball}}
+    var endZone: EndZone {get{return gameData.endZone}}
+    var bounceBars: [BounceBar] {get{return gameData.bounceBars}}
+    var solidBars: [SolidBar] {get{return gameData.solidBars}}
+    var breakBars: [BreakBar] {get{return gameData.breakBars}}
     
     var levelNumber: Int?
     var playerHasMovedTheBall = false
     
     init(gameData: GameData){
         self.gameData = gameData.clone()
-//        self.ball = gameData.ball
-//        self.endZone = gameData.endZone
-//
-//        self.bounceBars = gameData.bounceBars
-//        self.solidBars = gameData.solidBars
-//        self.breakBars = gameData.breakBars
+
         
         super.init(size: UIScreen.main.bounds.size)
         self.anchorPoint = CGPoint(x: 0.5, y: 0.5)
@@ -73,19 +67,31 @@ class LevelScene: SKScene {
     
     override func update(_ currentTime: TimeInterval) {
         if endZone.contains(ball.position){
-            
-            print("in endZone")
-            if let levelNumber = levelNumber{
-                for child in self.children {child.removeFromParent()}
-                self.removeAllChildren()
-                let nextLevelNumber = levelNumber + 1
-                levelPresentingDelegate.presentLevelWith(levelNumber: nextLevelNumber)
+            if playerIsEditing{
+                //move to editor with game data
                 
-
+            }else{
                 
-            } else {
-                levelPresentingDelegate.presentLevel(gameData: self.gameData)
+                if let levelNumber = levelNumber{
+                    for child in self.children {child.removeFromParent()}
+                    self.removeAllChildren()
+                    let nextLevelNumber = levelNumber + 1
+                    if nextLevelNumber > levelDataArray.count{
+                        let levelSelectVC = UIViewController(nibName: "LevelSelectVC", bundle: nil)
+                        self.levelPresentingDelegate?.present(levelSelectVC, animated: false, completion: nil)
+                    }else{
+                        levelPresentingDelegate!.presentLevelWith(levelNumber: nextLevelNumber)
+                    }
+                    
+                    
+                    
+                    
+                    
+                } else {
+                    levelPresentingDelegate!.presentLevel(gameData: gameData.clone())
+                }
             }
+            
             
         }
         

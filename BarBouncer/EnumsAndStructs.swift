@@ -28,12 +28,6 @@ enum BarSize {
     case small, medium, large
 }
 
-//struct BarSize {
-//    static let small: CGSize = CGSize(width: 5, height: 100)
-//    static let medium: CGSize = CGSize(width: 5, height: 120)
-//    static let large: CGSize = CGSize(width: 5, height: 140)
-//}
-
 struct BitMask {
     static let bounceBar: UInt32 = 0x1 << 1
     static let ball: UInt32 = 0x1 << 2
@@ -88,7 +82,7 @@ struct GameData {
         
         return GameData(ball: ball.clone(), endZone: endZone.clone(), bounceBars: bounceBarClones, solidBars: solidBarClones, breakBars: breakBarClones)
     }
-
+    
 }
 
 
