@@ -40,7 +40,7 @@ class LevelScene: SKScene {
     
     init(gameData: GameData){
         self.gameData = gameData.clone()
-
+        print(gameData.ball.position)
         
         super.init(size: UIScreen.main.bounds.size)
         self.anchorPoint = CGPoint(x: 0.5, y: 0.5)
@@ -95,13 +95,12 @@ class LevelScene: SKScene {
             
         }
         
-        if self.contains(ball.position){}else{
-            
-        }
     }
     
     func addObjects(){
         addChild(ball)
+        print(ball.position)
+        
         addChild(endZone)
         for bar in bounceBars {addChild(bar)}
         for bar in solidBars  {addChild(bar)}

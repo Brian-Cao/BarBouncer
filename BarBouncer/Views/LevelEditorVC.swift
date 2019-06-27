@@ -244,6 +244,7 @@ class LevelEditorVC: UIViewController{
 
 extension LevelEditorVC: EditorPresentingDelegate {
     func runLevel(gameData: GameData) {
+        print(gameData.ball.position)
         let newScene = LevelScene(gameData: gameData)
         newScene.playerIsEditing = true
         hideEditButtons()

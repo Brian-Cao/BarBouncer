@@ -189,8 +189,7 @@ class LevelEditor: SKScene, SKPhysicsContactDelegate{
         }
 
         addChild(gameData.endZone)
-
-        self.gameData.ball.physicsBody?.collisionBitMask = 0
+        
         addChild(gameData.ball)
     }
     
