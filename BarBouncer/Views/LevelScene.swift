@@ -100,7 +100,6 @@ class LevelScene: SKScene {
     func addObjects(){
         addChild(ball)
         print(ball.position)
-        
         addChild(endZone)
         for bar in bounceBars {addChild(bar)}
         for bar in solidBars  {addChild(bar)}
