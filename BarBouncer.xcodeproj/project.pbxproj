@@ -291,7 +291,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Brian Cao";
 				TargetAttributes = {
 					A7034A1C1EB16D8400646900 = {
@@ -302,14 +302,14 @@
 					};
 					A7034A361EB16D8500646900 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = L4C8QAYK3H;
+						DevelopmentTeam = 8XADYWMGR5;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = A7034A1C1EB16D8400646900;
 					};
 					A7034A411EB16D8500646900 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = L4C8QAYK3H;
+						DevelopmentTeam = 8XADYWMGR5;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = A7034A1C1EB16D8400646900;
@@ -318,10 +318,9 @@
 			};
 			buildConfigurationList = A7034A181EB16D8400646900 /* Build configuration list for PBXProject "BarBouncer" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -568,7 +567,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -621,7 +620,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -686,7 +685,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = L4C8QAYK3H;
+				DEVELOPMENT_TEAM = 8XADYWMGR5;
 				INFOPLIST_FILE = BarBouncerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cao.ball-to-endTests";
@@ -702,7 +701,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = L4C8QAYK3H;
+				DEVELOPMENT_TEAM = 8XADYWMGR5;
 				INFOPLIST_FILE = BarBouncerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cao.ball-to-endTests";
@@ -717,7 +716,7 @@
 			baseConfigurationReference = 9F911F6BF1F45E08E0B08F01 /* Pods-BarBouncerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = L4C8QAYK3H;
+				DEVELOPMENT_TEAM = 8XADYWMGR5;
 				INFOPLIST_FILE = BarBouncerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cao.ball-to-endUITests";
@@ -732,7 +731,7 @@
 			baseConfigurationReference = 1874ACEBA5CAF8A35FFE6C13 /* Pods-BarBouncerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = L4C8QAYK3H;
+				DEVELOPMENT_TEAM = 8XADYWMGR5;
 				INFOPLIST_FILE = BarBouncerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cao.ball-to-endUITests";

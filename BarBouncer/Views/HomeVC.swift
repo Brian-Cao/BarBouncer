@@ -64,7 +64,7 @@ class HomeVC: UIViewController, GADBannerViewDelegate{
     }
     
     private func setUpLayouts(){
-        let leadingAndTrailingGap = (UIScreen.main.bounds.width - 240) / 3
+     //   let leadingAndTrailingGap = (UIScreen.main.bounds.width - 240) / 3
         let quarterGapInSafeArea = UIScreen.main.bounds.height * (1/4)
         let thirdGapInSafeArea = UIScreen.main.bounds.height * (1/3)
         
