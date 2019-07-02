@@ -69,6 +69,7 @@ class LevelEditor: SKScene, SKPhysicsContactDelegate{
     func updateMoveController(){
         isFingerOnMoveController = true
         let moveController = Button(x: 0, y: -130, action: {})
+        moveController.physicsBody?.collisionBitMask = 0
         adjustmentController.addChild(moveController)
     }
     
@@ -117,20 +118,24 @@ class LevelEditor: SKScene, SKPhysicsContactDelegate{
         let upArrow = Button(x: 0, y: 60, action: {touchedNode.position.y += 2})
         upArrow.texture = SKTexture(image: UIImage(named: "BackIconTab")!)
         upArrow.zRotation = -CGFloat(Double.pi/2)
+        
         adjustmentController.addChild(upArrow)
         
         let downArrow = Button(x: 0, y: -60, action: {touchedNode.position.y -= 2})
         downArrow.texture = SKTexture(image: UIImage(named: "BackIconTab")!)
         downArrow.zRotation = CGFloat(Double.pi/2)
+       
         adjustmentController.addChild(downArrow)
         
         let leftArrow = Button(x: -60, y: 0, action: {touchedNode.position.x -= 2})
         leftArrow.texture = SKTexture(image: UIImage(named: "BackIconTab")!)
+        
         adjustmentController.addChild(leftArrow)
         
         let rightArrow = Button(x: 60, y: 0, action: {touchedNode.position.x += 2})
         rightArrow.texture = SKTexture(image: UIImage(named: "BackIconTab")!)
         rightArrow.zRotation = CGFloat(Double.pi)
+        
         adjustmentController.addChild(rightArrow)
     }
     
@@ -139,6 +144,7 @@ class LevelEditor: SKScene, SKPhysicsContactDelegate{
         let angleAdjuster = Button(x: 50, y: 50, action: {bar.turn(); self.self.updateAdjustmentControllerAngle(adjustmentController: adjustmentController, touchedNode: touchedNode)})
         //angleAdjuster.size = CGSize(width: 20, height: 20)
         angleAdjuster.texture = SKTexture(image: UIImage(named: "RestartButton")!)
+     
         adjustmentController.addChild(angleAdjuster)
     }
     
@@ -167,6 +173,7 @@ class LevelEditor: SKScene, SKPhysicsContactDelegate{
             ball.changeMoveDirection()
             moveDirectionAdjuster.zRotation -= CGFloat.pi/2
         }
+       
         adjustmentController.addChild(moveDirectionAdjuster)
     }
     
@@ -179,17 +186,21 @@ class LevelEditor: SKScene, SKPhysicsContactDelegate{
     
     func addObjects(gameData: GameData){
         for bar in gameData.bounceBars{
+            bar.physicsBody?.collisionBitMask = 0
             addChild(bar)
         }
         for bar in gameData.solidBars{
+            bar.physicsBody?.collisionBitMask = 0
             addChild(bar)
         }
         for bar in gameData.breakBars{
+            bar.physicsBody?.collisionBitMask = 0
             addChild(bar)
         }
-
+        gameData.endZone.physicsBody?.collisionBitMask = 0
         addChild(gameData.endZone)
         
+        gameData.ball.physicsBody?.collisionBitMask = 0
         addChild(gameData.ball)
     }
     
