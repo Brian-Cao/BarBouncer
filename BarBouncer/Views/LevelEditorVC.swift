@@ -73,7 +73,7 @@ class LevelEditorVC: UIViewController{
         return button
     }()
     @objc func addBreakBar(sender: UIButton!){
-        levelEditor.addBar(bar: BreakBar(x: 0, y: -150, angle: .right, size: .small, hardness: 1))
+        levelEditor.addBar(bar: BreakBar(x: 0, y: -150, angle: .right, size: .small, hardness: 0))
     }
     
     var runButton: UIButton = {

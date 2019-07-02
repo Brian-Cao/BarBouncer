@@ -69,7 +69,7 @@ class LevelScene: SKScene {
         if endZone.contains(ball.position){
             if playerIsEditing{
                 //move to editor with game data
-                
+                editorPresentingDelegate?.presentEditor(gameData: self.gameData)
             }else{
                 
                 if let levelNumber = levelNumber{

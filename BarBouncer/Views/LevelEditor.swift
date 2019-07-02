@@ -206,6 +206,7 @@ class LevelEditor: SKScene, SKPhysicsContactDelegate{
     
     func addBar(bar: Bar){
         addChild(bar)
+        bar.physicsBody?.collisionBitMask = 0
         switch bar {
         case is BounceBar:
             gameData.bounceBars.append(bar as! BounceBar)
