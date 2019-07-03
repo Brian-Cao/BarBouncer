@@ -1,0 +1,6 @@
+framework module Pods_BarBouncer {
+  umbrella header "Pods-BarBouncer-umbrella.h"
+
+  export *
+  module * { export * }
+}

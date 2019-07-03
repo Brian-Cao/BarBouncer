@@ -23,7 +23,6 @@
 		A7A6E28420BA51B000A9CD70 /* LevelSceneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A6E28320BA51B000A9CD70 /* LevelSceneVC.swift */; };
 		A7A7CF18228BE16400CF4F8A /* GameObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7CF17228BE16400CF4F8A /* GameObjects.swift */; };
 		A7E9E076228BE07600DFF5DC /* LevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E9E075228BE07600DFF5DC /* LevelScene.swift */; };
-		A7E9E078228BE0A300DFF5DC /* LevelMakerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E9E077228BE0A300DFF5DC /* LevelMakerScene.swift */; };
 		A7E9E07C228BE0FC00DFF5DC /* LevelDataArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E9E07B228BE0FC00DFF5DC /* LevelDataArray.swift */; };
 		A7FDABC41FDCF15D006FD335 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FDABC31FDCF15D006FD335 /* Button.swift */; };
 		D699E8F3A3CD379C335D9347 /* Pods_BarBouncerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0606B34604DEC1D99F6725 /* Pods_BarBouncerTests.framework */; };
@@ -75,7 +74,6 @@
 		A7A6E28320BA51B000A9CD70 /* LevelSceneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSceneVC.swift; sourceTree = "<group>"; };
 		A7A7CF17228BE16400CF4F8A /* GameObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObjects.swift; sourceTree = "<group>"; };
 		A7E9E075228BE07600DFF5DC /* LevelScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelScene.swift; sourceTree = "<group>"; };
-		A7E9E077228BE0A300DFF5DC /* LevelMakerScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelMakerScene.swift; sourceTree = "<group>"; };
 		A7E9E07B228BE0FC00DFF5DC /* LevelDataArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelDataArray.swift; sourceTree = "<group>"; };
 		A7FDABC31FDCF15D006FD335 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		BDFBE36ED57798A0B137A8AD /* Pods-BarBouncerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarBouncerTests.debug.xcconfig"; path = "Target Support Files/Pods-BarBouncerTests/Pods-BarBouncerTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -175,7 +173,6 @@
 				A7E9E075228BE07600DFF5DC /* LevelScene.swift */,
 				A768930D210A489F00767DF7 /* LevelEditorVC.swift */,
 				A768930A210A485600767DF7 /* LevelEditor.swift */,
-				A7E9E077228BE0A300DFF5DC /* LevelMakerScene.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -466,7 +463,6 @@
 				A768930E210A489F00767DF7 /* LevelEditorVC.swift in Sources */,
 				A7034A291EB16D8500646900 /* HomeVC.swift in Sources */,
 				A73B67E11F8F181C00C788B6 /* EnumsAndStructs.swift in Sources */,
-				A7E9E078228BE0A300DFF5DC /* LevelMakerScene.swift in Sources */,
 				A7034A211EB16D8500646900 /* AppDelegate.swift in Sources */,
 				A76F5E222095ACFF009CAE45 /* LevelSelectVC.swift in Sources */,
 				A768930B210A485600767DF7 /* LevelEditor.swift in Sources */,
