@@ -45,6 +45,7 @@ class LevelScene: SKScene {
         super.init(size: UIScreen.main.bounds.size)
         self.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         self.physicsWorld.gravity = CGVector(dx: 0, dy: 0)
+        
         addObjects()
         
     }
