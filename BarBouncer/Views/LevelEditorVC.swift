@@ -95,7 +95,7 @@ class LevelEditorVC: UIViewController{
         return button
     }()
     @objc func printGameData(sender: UIButton!){
-        print(levelEditor.gameData.printData())
+        print(levelEditor.gameData.clone())
     }
     
     var deleteBarButton: UIButton = {
@@ -113,6 +113,10 @@ class LevelEditorVC: UIViewController{
             levelEditor.updateGameData()
         }
     }
+    
+    
+    
+    
     
     var saveEditedLevelButton: UIButton = {
         let button = UIButton()

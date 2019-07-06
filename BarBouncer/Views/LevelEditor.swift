@@ -187,14 +187,17 @@ class LevelEditor: SKScene, SKPhysicsContactDelegate{
     func addObjects(gameData: GameData){
         for bar in gameData.bounceBars{
             bar.physicsBody?.collisionBitMask = 0
+            bar.physicsBody?.pinned = false
             addChild(bar)
         }
         for bar in gameData.solidBars{
             bar.physicsBody?.collisionBitMask = 0
+            bar.physicsBody?.pinned = false
             addChild(bar)
         }
         for bar in gameData.breakBars{
             bar.physicsBody?.collisionBitMask = 0
+            bar.physicsBody?.pinned = false
             addChild(bar)
         }
         gameData.endZone.physicsBody?.collisionBitMask = 0
