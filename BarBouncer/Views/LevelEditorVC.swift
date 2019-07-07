@@ -114,10 +114,6 @@ class LevelEditorVC: UIViewController{
         }
     }
     
-    
-    
-    
-    
     var saveEditedLevelButton: UIButton = {
         let button = UIButton()
         button.backgroundColor = .green

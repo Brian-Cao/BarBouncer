@@ -63,7 +63,7 @@ class LevelSceneVC: UIViewController{
         return button
     }()
     @objc func moveToLevelEditor(sender: UIButton!) {
-        let nextViewController = LevelEditorVC(levelNumber: levelNumber!)
+        let nextViewController = LevelEditorVC(levelNumber: levelNumber!-1)
         self.present(nextViewController, animated:false, completion:nil)
     }
     
