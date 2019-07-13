@@ -73,7 +73,7 @@ class Ball: SKSpriteNode {
     }
     
     func print() -> String{
-        return "Ball(x: \(self.position.x), y: \(self.position.y), moveDirection: \(self.moveDirection), force: \(self.force))"
+        return "Ball(x: \(self.position.x), y: \(self.position.y), moveDirection: .\(self.moveDirection), force: \(self.force))"
     }
  
     required init?(coder aDecoder: NSCoder) {
@@ -176,7 +176,7 @@ class BounceBar: Bar {
     }
     
     func print() -> String{
-        return "BounceBar(x: \(self.position.x), y: \(self.position.y), angle: \(self.angle)),"
+        return "BounceBar(x: \(self.position.x), y: \(self.position.y), angle: .\(self.angle)),"
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -230,7 +230,7 @@ class SolidBar: Bar {
     }
     
     func print() -> String{
-        return "SolidBar(x: \(self.position.x), y: \(self.position.y), angle: \(self.angle), size: \(self.barSize)),"
+        return "SolidBar(x: \(self.position.x), y: \(self.position.y), angle: .\(self.angle), size: .\(self.barSize)),"
     }
 
     
@@ -288,7 +288,7 @@ class BreakBar: SolidBar {
     }
     
     override func print() -> String{
-        return "BreakBar(x: \(self.position.x), y: \(self.position.y), angle: \(self.angle), size: \(self.barSize), hardness: \(self.hardness)),"
+        return "BreakBar(x: \(self.position.x), y: \(self.position.y), angle: .\(self.angle), size: .\(self.barSize), hardness: .\(self.hardness)),"
     }
     
     required init?(coder aDecoder: NSCoder) {

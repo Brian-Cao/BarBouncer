@@ -88,11 +88,11 @@ struct GameData {
         var solidBarsPrint: String = ""
         var breakBarsPrint: String = ""
         for bar in bounceBars{bounceBarsPrint.append(bar.print())}
-        for bar in bounceBars{solidBarsPrint.append(bar.print())}
-        for bar in bounceBars{breakBarsPrint.append(bar.print())}
+        for bar in solidBars{solidBarsPrint.append(bar.print())}
+        for bar in breakBars{breakBarsPrint.append(bar.print())}
         
         
-        print("GameData(ball: (\(self.ball.print())), endZone: (\(self.endZone.print())), bounceBars: [\(bounceBarsPrint)], solidBars: [\(solidBarsPrint)], breakBars: [\(bounceBarsPrint)])")
+        print("GameData(ball: (\(self.ball.print())), endZone: (\(self.endZone.print())), bounceBars: [\(bounceBarsPrint)], solidBars: [\(solidBarsPrint)], breakBars: [\(breakBarsPrint)]),")
     }
     
 }
