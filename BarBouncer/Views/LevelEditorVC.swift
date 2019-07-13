@@ -142,7 +142,6 @@ class LevelEditorVC: UIViewController{
         levelEditor = LevelEditor(gameData: lastSavedLevelsGameData)
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addSubview(editorView)
@@ -214,8 +213,6 @@ class LevelEditorVC: UIViewController{
         returnLastSavedEditedLevelButton.bottomAnchor.constraint(equalTo: solidBarButton.topAnchor, constant: -16).isActive = true
     }
     
-    
-    
     func hideEditButtons() {
         runButton.isHidden = true
         bounceBarButton.isHidden = true
@@ -241,11 +238,11 @@ extension LevelEditorVC: EditorPresentingDelegate {
         deleteBarButton.isHidden = false
     }
     func runLevel(gameData: GameData) {
-        print(gameData.ball.position)
         let newScene = LevelScene(gameData: gameData)
         newScene.playerIsEditing = true
-        hideEditButtons()
         newScene.editorPresentingDelegate = self
+        hideEditButtons()
+        
         editorView.presentScene(newScene)
     }
     func runLevel(levelNumber: Int) {

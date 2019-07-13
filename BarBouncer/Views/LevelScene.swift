@@ -27,7 +27,9 @@ class LevelScene: SKScene {
     
     var levelPresentingDelegate: LevelSceneVC?
     var editorPresentingDelegate: EditorPresentingDelegate?
+    
     var playerIsEditing = false
+    let initialBallPosition: CGPoint
     var gameData: GameData
     
     var ball: Ball {get{return gameData.ball}}
@@ -40,10 +42,13 @@ class LevelScene: SKScene {
     var playerHasMovedTheBall = false
     
     init(gameData: GameData){
-        self.gameData = gameData.clone()
-        print(gameData.ball.position)
+        
+        let clonedGameData = gameData.clone()
+        self.gameData = clonedGameData
+        self.initialBallPosition = clonedGameData.ball.position
         
         super.init(size: UIScreen.main.bounds.size)
+        
         self.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         self.physicsWorld.gravity = CGVector(dx: 0, dy: 0)
         
@@ -71,8 +76,10 @@ class LevelScene: SKScene {
         if endZone.contains(ball.position){
             if playerIsEditing{
                 //move to editor with game data
+                ball.position = initialBallPosition
                 editorPresentingDelegate!.showEditButtons()
                 editorPresentingDelegate?.presentEditor(gameData: self.gameData)
+                
             }else{
                 
                 if let levelNumber = levelNumber{
