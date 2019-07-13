@@ -15,6 +15,7 @@ protocol LevelPresentingDelegate{
 }
 
 protocol EditorPresentingDelegate {
+    func showEditButtons()
     func runLevel(gameData: GameData)
     func runLevel(levelNumber: Int)
     func presentEditorWith(levelNumber: Int)
@@ -70,6 +71,7 @@ class LevelScene: SKScene {
         if endZone.contains(ball.position){
             if playerIsEditing{
                 //move to editor with game data
+                editorPresentingDelegate!.showEditButtons()
                 editorPresentingDelegate?.presentEditor(gameData: self.gameData)
             }else{
                 

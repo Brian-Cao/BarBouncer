@@ -214,14 +214,7 @@ class LevelEditorVC: UIViewController{
         returnLastSavedEditedLevelButton.bottomAnchor.constraint(equalTo: solidBarButton.topAnchor, constant: -16).isActive = true
     }
     
-    func showEditButtons(){
-        runButton.isHidden = false
-        bounceBarButton.isHidden = false
-        solidBarButton.isHidden = false
-        breakBarButton.isHidden = false
-        printGameDataButton.isHidden = false
-        deleteBarButton.isHidden = false
-    }
+    
     
     func hideEditButtons() {
         runButton.isHidden = true
@@ -239,6 +232,14 @@ class LevelEditorVC: UIViewController{
 }
 
 extension LevelEditorVC: EditorPresentingDelegate {
+    func showEditButtons(){
+        runButton.isHidden = false
+        bounceBarButton.isHidden = false
+        solidBarButton.isHidden = false
+        breakBarButton.isHidden = false
+        printGameDataButton.isHidden = false
+        deleteBarButton.isHidden = false
+    }
     func runLevel(gameData: GameData) {
         print(gameData.ball.position)
         let newScene = LevelScene(gameData: gameData)
