@@ -13,10 +13,10 @@ class Ball: SKSpriteNode {
     
     var isTransparent = false
     var moveDirection: direction
-    let force: Int
+    let force: Double
     
-    init(x: CGFloat, y: CGFloat, moveDirection: direction, force: Int = 1) {
-        let ballDiameter: CGFloat = 10
+    init(x: CGFloat, y: CGFloat, moveDirection: direction, force: Double = 0.5) {
+        let ballDiameter: CGFloat = 7.5
         self.moveDirection = moveDirection
         self.force = force
         
@@ -85,7 +85,7 @@ class EndZone: SKSpriteNode{
     
     init(x: CGFloat, y: CGFloat) {
     
-        super.init(texture: nil, color: .green, size: CGSize(width: 20, height: 20))
+        super.init(texture: nil, color: .green, size: CGSize(width: 15, height: 15))
         self.position = CGPoint(x: x, y: y)
        // self.physicsBody = SKPhysicsBody(rectangleOf: size)
        // self.physicsBody?.categoryBitMask = BitMask.endZone
@@ -126,7 +126,7 @@ class Bar: SKSpriteNode {
         case .straight:
             self.zRotation = CGFloat.pi/2
         case .left:
-            self.zRotation = CGFloat.pi * CGFloat(3/4)
+            self.zRotation = (CGFloat.pi * 3)/4
         case .flat:
             self.zRotation = CGFloat.pi
         }
@@ -162,7 +162,7 @@ class BounceBar: Bar {
         super.init(x: x, y: y, angle: angle, color: .white)
         setAngle(angle: angle)
         setColor(color: .white)
-        let size = CGSize(width: 40, height: 3)
+        let size = CGSize(width: 30, height: 3)
         self.size = size
         self.physicsBody = SKPhysicsBody(rectangleOf: size)
         self.physicsBody?.pinned = true
@@ -204,9 +204,9 @@ class SolidBar: Bar {
     func getSize(barSize: BarSize) -> CGSize{
         var barWidth: CGFloat!
         switch barSize {
-            case .small: barWidth = 80
-            case .medium: barWidth = 150
-            case .large: barWidth = 200
+            case .small: barWidth = 60
+            case .medium: barWidth = 112
+            case .large: barWidth = 150
         }
         return CGSize(width: barWidth, height: 10)
     }

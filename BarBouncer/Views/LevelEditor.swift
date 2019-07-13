@@ -188,16 +188,19 @@ class LevelEditor: SKScene, SKPhysicsContactDelegate{
         for bar in gameData.bounceBars{
             bar.physicsBody?.collisionBitMask = 0
             bar.physicsBody?.pinned = false
+            bar.physicsBody?.allowsRotation = true
             addChild(bar)
         }
         for bar in gameData.solidBars{
             bar.physicsBody?.collisionBitMask = 0
             bar.physicsBody?.pinned = false
+            bar.physicsBody?.allowsRotation = true
             addChild(bar)
         }
         for bar in gameData.breakBars{
             bar.physicsBody?.collisionBitMask = 0
             bar.physicsBody?.pinned = false
+            bar.physicsBody?.allowsRotation = true
             addChild(bar)
         }
         gameData.endZone.physicsBody?.collisionBitMask = 0
