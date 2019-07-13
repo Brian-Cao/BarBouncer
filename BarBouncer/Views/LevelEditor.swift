@@ -215,10 +215,19 @@ class LevelEditor: SKScene, SKPhysicsContactDelegate{
         bar.physicsBody?.collisionBitMask = 0
         switch bar {
         case is BounceBar:
+            bar.physicsBody?.collisionBitMask = 0
+            bar.physicsBody?.pinned = false
+            bar.physicsBody?.allowsRotation = true
             gameData.bounceBars.append(bar as! BounceBar)
         case is SolidBar:
+            bar.physicsBody?.collisionBitMask = 0
+            bar.physicsBody?.pinned = false
+            bar.physicsBody?.allowsRotation = true
             gameData.solidBars.append(bar as! SolidBar)
         case is BreakBar:
+            bar.physicsBody?.collisionBitMask = 0
+            bar.physicsBody?.pinned = false
+            bar.physicsBody?.allowsRotation = true
             gameData.breakBars.append(bar as! BreakBar)
         default:
             break
@@ -232,10 +241,19 @@ class LevelEditor: SKScene, SKPhysicsContactDelegate{
         for child in self.children{
             switch child{
             case is BounceBar:
+                child.physicsBody?.collisionBitMask = 0
+                child.physicsBody?.pinned = false
+                child.physicsBody?.allowsRotation = true
                 gameData.bounceBars.append(child as! BounceBar)
             case is SolidBar:
+                child.physicsBody?.collisionBitMask = 0
+                child.physicsBody?.pinned = false
+                child.physicsBody?.allowsRotation = true
                 gameData.solidBars.append(child as! SolidBar)
             case is BreakBar:
+                child.physicsBody?.collisionBitMask = 0
+                child.physicsBody?.pinned = false
+                child.physicsBody?.allowsRotation = true
                 gameData.breakBars.append(child as! BreakBar)
             default:
                 break
